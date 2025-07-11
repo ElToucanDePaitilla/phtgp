@@ -1,0 +1,7 @@
+/* Section Portfolio */
+.portfolio {
+    background-color:;
+    overflow: hidden;      /* crée un nouveau BFC */
+  /* si besoin, un padding-bottom supplémentaire : */
+    padding-bottom: 0px;
+  }

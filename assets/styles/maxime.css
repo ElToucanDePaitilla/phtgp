@@ -1,0 +1,50 @@
+/* Maxime */
+.maxime {
+    
+    background: url('/assets/maxime.webp') center/cover no-repeat;
+    background-attachment: fixed;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    will-change: background-position;
+}
+
+
+/* Contenu texte */
+.maxime-content {
+    position: absolute;
+    bottom: 10%;      /* ajustez la hauteur depuis le bas */
+    left: 5%;        /* ajustez la marge depuis la gauche */
+    transform: none; /* on supprime le translateX */
+    width: 40vw;     /* on donne une largeur de 40% de la vue */
+    /* z-index, will-change… restent si nécessaire */
+}
+
+.maxime-content {
+    margin: 0;              /* pour bien coller au conteneur */
+    width: 100%;            /* remplit tout le .maxime-content */  
+    position: absolute;     /* on sort du flux */
+    bottom: 5%;             /* espacement depuis le bas */
+    left: 5%;               /* espacement depuis la gauche */
+    width: 40vw;            /* max 40 % de la largeur de la fenêtre */
+    transform: none;        /* supprime tout translate hérité */
+  }
+
+
+/* Sous-titre */
+.maxime-content .maxime-subtitle {
+    font-style: italic;
+    font-size: 2rem;
+    letter-spacing: 0.2em;
+    letter-spacing: 0.1em;
+    color: #fff;
+    font-weight: lighter;
+    line-height: 10vh;
+    display: inline-block;
+    position: relative;
+    margin-top: 20px;
+    padding: 0 20px;
+    
+}

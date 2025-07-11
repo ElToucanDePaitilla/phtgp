@@ -1,0 +1,37 @@
+/* Layout: containers et utilitaires */
+
+/* Conteneur principal pour centrer le contenu */
+.container {
+    max-width: 1140px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+  
+  /* Centrage horizontal pour sections ou blocs spécifiques */
+  .h-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 30px;
+    text-align: center;
+    letter-spacing: 2px;
+    font-weight: normal;
+  }
+  
+  /* Colonne verticale générique */
+  .column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* Décalage des ancres pour tenir compte de la nav fixe */
+  .anchor {
+    display: block;
+    position: relative;
+    top: -60px;
+    visibility: hidden;
+  }
+  

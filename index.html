@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8">
+    <title>MICHEL HAURY – Photographe</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@100&family=Roboto:wght@100&family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+  
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+  
+
+
+    <!-- Votre CSS global -->
+    <link rel="stylesheet" href="styles.css">
+  
+    <!-- 1) SDK EmailJS v4 -->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+  </head>
+  
+<body>
+
+  <nav class="navbar">
+    <a href="#anchor-home" class="active">ACCUEIL</a>
+    <a href="#anchor-apropos">À PROPOS</a>
+    <a href="#anchor-portfolio">PORTFOLIO</a>
+    <a href="#anchor-contact">CONTACT</a>
+    <a href="#">NEWS</a>
+    <a href="#">EXPOS & EVENTS</a>
+    <img src="assets/user02.png" alt="Utilisateur" id="user">
+    <a href="#" class="connect">Connexion</a>
+
+    <!-- Burger menu icon -->
+    <div class="burger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </nav>
+  <section class="hero"  id="anchor-home">
+    <div class="social">
+      <a href="https://www.facebook.com/haurymichel23/" target="_blanck"><img src="assets/facebook.png" alt="Facebook"></a>
+      <a href="https://www.instagram.com/michel23430/" target="_blanck"><img src="assets/instagram.png" alt="Twitter"></a>
+    </div>
+    <div class="hero-content">
+        <h1>MICHEL HAURY</h1>
+        <!-- Voici le sous-titre avec barres -->
+        <p class="subtitle">PHOTOGRAPHE</p>
+    </div>
+      
+  </section>
+ 
+  <div id="anchor-apropos" class="anchor"></div>
+  <section class="section-apropos">
+
+    <div class="portrait">
+        <img src="assets/portrait02.png" alt="portait de Michel Haury">
+    </div>
+    <div class="apropos">
+        <h2>À propos</h2>
+        <hr class="separator">
+        <p>Michel HAURY a découvert la photographie à l’âge de 14 ans, lorsqu’il reçut en cadeau son premier appareil photo reflex.</p>
+        <p>Dès lors, passionné par l’image, il n’a cessé d’explorer l’art photographique. </p>
+        <p>Originaire de la région parisienne, il garde, depuis son plus jeune âge, des attaches fortes avec le département de la Creuse où il demeure maintenant pendant une grande partie de l’année.</p>
+        <p>Les paysages de la Creuse et de la Haute-Vienne sont au cœur de son travail.</p>
+        <p>Il s’attaque également à des sujets aussi variés que le portrait, la faune, la flore ou des créations plus artistiques.</p>
+        <p>Il vous invite, à travers ses clichés, à regarder la vie et ce qui vous entoure d’une autre manière et à admirer ce que l’œil ordinaire ne perçoit pas.</p>
+    </div>
+
+  </section>
+  
+  <section class="portfolio" id="anchor-portfolio">
+    <div class="gallery">
+      <div class="grid-sizer"></div>
+  
+      <div class="grid-item">
+        <img loading="lazy"
+             src="assets/images/entetes-galeries/creuse.webp"
+             alt="Creuse">
+      </div>
+      <div class="grid-item">
+        <img loading="lazy"
+             src="assets/images/entetes-galeries/faune.webp"
+             alt="Faune">
+      </div>
+      <div class="grid-item">
+        <img loading="lazy"
+             src="assets/images/entetes-galeries/flore.webp"
+             alt="Flore">
+      </div>
+      <div class="grid-item">
+        <img loading="lazy"
+             src="assets/images/entetes-galeries/limoges.webp"
+             alt="Limoges">
+      </div>
+      <div class="grid-item">
+        <img loading="lazy"
+             src="assets/images/entetes-galeries/nature.webp"
+             alt="Nature">
+      </div>
+      <div class="grid-item">
+        <img loading="lazy"
+             src="assets/images/entetes-galeries/natures-mortes.webp"
+             alt="Natures mortes">
+      </div>
+      <div class="grid-item">
+        <img loading="lazy"
+             src="assets/images/entetes-galeries/nuit.webp"
+             alt="Nuit">
+      </div>
+      <div class="grid-item">
+        <img loading="lazy"
+             src="assets/images/entetes-galeries/paysages.jpg"
+             alt="Paysages">
+      </div>
+      <div class="grid-item">
+        <img loading="lazy"
+             src="assets/images/entetes-galeries/portrait.jpg"
+             alt="Portraits">
+      </div>
+    </div>
+  </section>
+
+    <!-- Modale full-screen -->
+  <div id="modal">
+    <div class="modal-content">
+      <span class="close-btn" aria-label="Fermer la modale">&times;</span>
+      <main class="accueil-main">
+        <div class="swiper" id="gallery-swiper">
+          <div class="swiper-wrapper">
+            <!-- Slides générées dynamiquement -->
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </main>
+    </div>
+  </div>
+
+
+  <section class="maxime">
+
+    <div class="maxime-content">
+        <p class="maxime-subtitle">'' De la magie du regard naissent les émotions ''</p>
+    </div>
+      
+  </section>
+
+
+  <section class="section-contact" id="anchor-contact">
+      <div class="formulaire">
+          <div class="apropos">
+            <h2>Me contacter</h2>
+            <hr class="separator">
+            <p>Les Casseaux</p>
+            <p>87000 Limoges</p>
+          </div>
+          <form id="contact-form" class="contact-form contact-container">
+            <!-- Honeypot anti-spam (invisible) -->
+            <input type="text" name="_gotcha" style="display:none" autocomplete="off">
+        
+            <div class="form-group">
+              <label for="name">Nom</label>
+              <input type="text" id="name" name="user_name" placeholder="Entrez votre nom" required>
+            </div>
+        
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="user_email" placeholder="Entrez votre email" required>
+            </div>
+        
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="user_message" placeholder="Votre message ici" rows="5" required></textarea>
+            </div>
+        
+            <button type="submit" class="submit-btn">Envoyer</button>
+          </form>
+      </div>            
+      <div class="photo-contact">
+          <img src="assets/contact.webp" alt="Photo formulaire de contact: Arbres majestueux">
+      </div>
+  </section>
+
+  <section>
+  </section>
+
+  <footer>
+    <div class="back-to-top">
+      <a href="#top">
+        <img src="assets/up-arrow.png" alt="Haut de page">
+        Haut de page
+      </a>
+    </div>
+    <div class="mentions">
+      <p>Mentions légales</p>
+      <p>Politique en matière de cookies</p>
+      <p>Politique de confidentialité</p>
+      <p>Conditions d'utilisation</p>
+    </div>
+    <div class="copyright">
+      <p>© copyright 2025 - www.michelhaury.com</p>
+      <p>Made with love by</p>
+      <a href="https://nexus-fullstacksolutions.com" target="_blank" rel="noopener"><p class="nexus">Nexus Full Stack Solutions</p></a>
+      
+    </div>
+
+
+  </footer>
+  <script src="assets/scripts/prevent-copy.js" defer></script>
+  <script src="assets/scripts/navhide.js" defer></script>
+  <script src="assets/scripts/smooth-scroll.js" defer></script>
+  <script src="assets/scripts/email.js" defer></script>
+  <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+  <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+  <script src="assets/scripts/masonry.js" defer></script>
+  <script src="assets/scripts/reveal.js" defer></script>
+  <script src="assets/scripts/parallax.js" defer></script>
+  <script src="assets/scripts/modal.js" defer></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/scripts/gallery-loader.js" defer></script>
+
+  <!--<script src="assets/scripts/gallery-lightbox.js" defer></script>-->
+
+<!-- INSERTION À LA FIN DE index.html, JUSTE AVANT </body> -->
+<!-- OVERRIDES DE LAST RESORT POUR LA MODALE SWIPER -->
+ <!-- OVERRIDES DE LAST RESORT POUR LA MODALE SWIPER -->
+
+
+
+ <!-- OVERRIDES DE LAST RESORT POUR LA MODALE SWIPER -->
+ <style>
+  /* 0) Annule margin-top/height sur .accueil-main */
+  #modal.active .accueil-main {
+    margin-top: 0 !important;
+    padding:    0 !important;
+    width:      100% !important;
+    height:     100% !important;
+    max-width:  100% !important;
+    max-height: 100% !important;
+  }
+
+  /* 1) Full-screen Swiper container */
+  #modal.active .accueil-main .swiper {
+    width: 100% !important;
+    height: 100% !important;
+    overflow: hidden !important;
+  }
+
+  /* 2) Wrapper et slides */
+  #modal.active .swiper-wrapper,
+  #modal.active .swiper-slide {
+    width: 100% !important;
+    height: 100% !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+
+  /* 3) Images contain */
+  #modal.active .swiper-slide img {
+    width:         auto !important;
+    height:        auto !important;
+    max-width:     100% !important;
+    max-height:    100% !important;
+    object-fit:    contain !important;
+    object-position: center !important;
+    z-index:       1 !important;
+  }
+
+  /* 4) Contrôles au-dessus */
+  #modal .close-btn,
+  #modal.active .swiper-button-next,
+  #modal.active .swiper-button-prev,
+  #modal.active .swiper-pagination {
+    z-index: 11000 !important;
+    opacity: 1       !important;
+  }
+  #modal.active .swiper-button-next { right: 10px !important; left: auto !important; }
+  #modal.active .swiper-button-prev { left:  10px !important; right: auto !important; }
+  /* Positionnement centré de la pagination et affichage */
+  #modal.active .swiper-pagination {
+    bottom: 20px !important;
+    left: 50% !important;
+    right: auto !important;
+    transform: translateX(-50%) !important;
+    display: block !important;
+  }
+</style>
+
+
+
+
+  
+
+</body>
+</html>

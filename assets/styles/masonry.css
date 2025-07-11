@@ -1,0 +1,98 @@
+.gallery {
+  width: 100%;
+  margin: 50px auto 0;
+  position: relative;
+  /* min-height pour éviter trop petit */
+  min-height: 400px;
+  gap: 0;
+}
+
+.grid-sizer {
+  width: 33.333%;
+}
+
+.grid-item {
+  width: 33.333%;
+  margin: 0;                /* plus d’écart vertical */
+  position: relative;       /* pour le pseudo-élément */
+  overflow: hidden;         /* masque tout débordement de l’image */
+}
+
+.grid-item img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  transform-origin: center center;       /* zoom centré */
+  transition: transform 1s cubic-bezier(0, 0, 0.4, 1);       /* transition du zoom */
+}
+
+.grid-item::after {
+  content: "";
+  position: absolute;
+  inset: 0;                              /* top:0; right:0; bottom:0; left:0; */
+  background: rgba(255,255,255,0.4);     /* voile blanc semi-transparent */
+  opacity: 0;
+  transition: transform 1s cubic-bezier(0, 0, 0.4, 1);         /* transition de l’opacité */
+  pointer-events: none;                  /* laisse passer la souris */
+}
+
+.grid-item:hover img {
+  transform: scale(1.1);                 /* léger zoom */
+}
+
+.grid-item:hover::after {
+  opacity: 1;                            /* voile visible au survol */
+}
+
+.portfolio {
+  overflow: visible;      /* laisse la galerie pousser la section contact */
+  padding-bottom: 20px;   /* si besoin d’un peu de marge */
+}
+
+@media (max-width: 500px) {
+  .grid-sizer,
+  .grid-item {
+    width: 100%;         /* 1 colonne en mobile */
+  }
+}
+
+/* 1) Voile blanc par défaut opaque */
+.grid-item::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(255,255,255,0.4);
+  opacity: 1;                                   /* voile visible */
+  transition: opacity 0.5s ease-out;            /* disparition en 0.5s */
+  pointer-events: none;
+}
+
+/* 2) Quand on a la classe .reveal, le voile s’efface */
+.grid-item.reveal::after {
+  opacity: 0;                                   /* voile disparu */
+}
+
+/* — Vos règles existantes — */
+.grid-item::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(255,255,255,0.4);
+  opacity: 1;
+  transition: opacity 0.5s ease-out;
+  pointer-events: none;
+}
+
+.grid-item.reveal::after {
+  opacity: 0;
+}
+
+/* — Nouvelle règle pour le survol — */
+.grid-item:hover::after {
+  /* remet le voile semi-opaque au survol */
+  opacity: 0.6;
+  /* transition plus rapide pour le hover */
+  transition: opacity 0.3s ease-in;
+}
+

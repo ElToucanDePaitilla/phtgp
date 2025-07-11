@@ -1,0 +1,65 @@
+/* Hero */
+.hero {
+  background: url('/assets/accueil.webp') center/cover no-repeat;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  will-change: background-position;
+}
+.hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+/* Contenu texte */
+.hero-content {
+  position: absolute;
+  bottom: 35%;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  z-index: 1;
+  will-change: transform;
+}
+
+.hero-content h1 {
+  font-size: 4rem;
+  letter-spacing: 0.2em;
+  margin-bottom: 10px;
+  white-space: nowrap;
+}
+
+/* Sous-titre */
+.hero-content .subtitle {
+  font-family: 'Exo 2', sans-serif;
+  font-size: 1.2rem;
+  font-weight: 900;
+  display: inline-block;
+  position: relative;
+  letter-spacing: 0.1em;
+  color: #fff;
+  margin-top: 20px;
+  padding: 0 20px;
+}
+.hero-content .subtitle::before,
+.hero-content .subtitle::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 60px;
+  height: 1px;
+  background: #fff;
+  transform: translateY(-50%);
+}
+.hero-content .subtitle::before {
+  left: 0;
+  transform: translate(-100%, -50%);
+}
+.hero-content .subtitle::after {
+  right: 0;
+  transform: translate(100%, -50%);
+}

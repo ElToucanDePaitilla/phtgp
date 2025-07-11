@@ -1,0 +1,52 @@
+/* Media Query à 1140px */
+@media (max-width: 1140px) {
+    .navbar a,
+    .navbar .connexion {
+      display: none;
+    }
+    .burger {
+      display: flex;
+    }
+    #user {
+      display: none;
+    }
+    .hero { height: 100vh; }
+    .section-apropos {
+      flex-direction: column;
+      align-items: center;
+    }
+    .portrait, .apropos { width: 100%; }
+    .apropos p {
+      font-size: 20px;
+      line-height: 28px;
+    }
+    .social {
+      left: 10px;
+      top: 70%;
+    }
+    .social a img {
+      width: 60px;
+      height: 60px;
+    }
+    }
+    
+    /* Media Query à 900px */
+    @media (max-width: 900px) {
+    .burger { display: flex; }
+    .hero { height: 100vh; }
+    .apropos p {
+      font-size: 20px;
+      line-height: 28px;
+    }
+    
+    footer .mentions {
+      flex-direction: column;
+      }
+    
+    }
+
+
+    
+    
+    
+    

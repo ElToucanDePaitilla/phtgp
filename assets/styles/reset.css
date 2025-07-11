@@ -1,0 +1,12 @@
+/* Reset basique */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html {
+    /* animation du scroll */
+    scroll-behavior: smooth;
+  }
+  

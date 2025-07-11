@@ -1,0 +1,166 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  box-sizing: border-box;
+}
+
+.accueil-main {
+  margin-top: 80px;
+  height: calc(100vh - 80px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* 3) Images responsives, centrées, sans déformation (mode de base) */
+.accueil-main .swiper-slide img {
+  display: block;
+  margin: auto;
+  max-width: 100%;  
+  max-height: 100%; /* ou calc(100vh - 100px) si besoin */
+  object-fit: contain;
+}
+
+.swiper {
+  width: auto;
+  height: 90%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #111;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+}
+
+.swiper-wrapper {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.swiper-slide {
+  width: auto;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.swiper-slide a {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+/* Placement ABSOLU des flèches */
+.swiper-button-next,
+.swiper-button-prev {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  color: #ffffff !important;
+}
+
+.swiper-button-next {
+  right: -40px; /* À ajuster selon esthétique */
+}
+
+.swiper-button-prev {
+  left: -40px; /* À ajuster selon esthétique */
+}
+
+/* Pagination */
+.swiper-pagination {
+  color: #ffffff !important;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: lighter;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}
+
+/* 1) Faire le conteneur Swiper plein pour remplir la modale */
+.accueil-main .swiper {
+  width: 100% !important;
+  height: 100% !important;
+}
+
+/* 2) Override définitif pour les images : contain, pas de cover */
+.swiper-slide img {
+  width: auto !important;          /* ne force pas la largeur */
+  height: auto !important;         /* ne force pas la hauteur */
+  max-width: 100% !important;      /* ne dépasse jamais le slide */
+  max-height: 100% !important;     /* idem verticalement */
+  object-fit: contain !important;  /* voir l’image en entier */
+  object-position: center !important;
+}
+
+/* ========== OVERRIDES SPÉCIFIQUES À LA MODALE ========== */
+
+/* Conteneur de la modale */
+#modal .modal-content {
+  position: relative;   /* pour le z-index des contrôles */
+  max-width: 90vw;
+  max-height: 90vh;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Fermeture : croix toujours au-dessus */
+#modal .close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 2rem;
+  line-height: 1;
+  color: #fff;
+  cursor: pointer;
+  user-select: none;
+  z-index: 10000 !important;
+}
+
+/* Slides dans la modale : redondant mais ultra-spécifique */
+html body #modal .modal-content .swiper-slide img {
+  width: auto !important;
+  height: auto !important;
+  max-width: 100% !important;
+  max-height: 100% !important;
+  object-fit: contain !important;
+  object-position: center center !important;
+}
+
+/* Flèches au-dessus du carousel */
+html body #modal .modal-content .swiper-button-next,
+html body #modal .modal-content .swiper-button-prev {
+  z-index: 10001 !important;
+  color: #fff !important;
+  opacity: 1 !important;
+}
+
+/* Pagination au-dessus du carousel */
+html body #modal .modal-content .swiper-pagination {
+  z-index: 10001 !important;
+  color: #fff !important;
+  bottom: 10px !important;
+  opacity: 1 !important;
+}
+
+/* Si vous utilisez la pagination en fraction */
+html body #modal .modal-content .swiper-pagination-fraction,
+html body #modal .modal-content .swiper-pagination-current,
+html body #modal .modal-content .swiper-pagination-total {
+  color: #fff !important;
+}
+
+/* ==== OVERRIDE POUR LA MODALE ==== */
+html body #modal.active .accueil-main {
+  margin-top: 0 !important;   /* annule le décalage */
+  height:     100% !important; /* prend toute la hauteur dispo */
+}
