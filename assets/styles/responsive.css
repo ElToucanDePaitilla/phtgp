@@ -15,6 +15,27 @@
       flex-direction: column;
       align-items: center;
     }
+
+    .hero-content h1 {
+      font-size: 3rem;
+      letter-spacing: 0.2em;
+      margin-bottom: 10px;
+      white-space: nowrap;
+    }
+    
+    /* Sous-titre */
+    .hero-content .subtitle {
+      font-family: 'Exo 2', sans-serif;
+      font-size: 1.2rem;
+      font-weight: 900;
+      display: inline-block;
+      position: relative;
+      letter-spacing: 0.1em;
+      color: #fff;
+      margin-top: 20px;
+      padding: 0 20px;
+    }
+
     .portrait, .apropos { width: 100%; }
     .apropos p {
       font-size: 20px;
@@ -34,6 +55,29 @@
     @media (max-width: 900px) {
     .burger { display: flex; }
     .hero { height: 100vh; }
+
+    .hero-content h1 {
+      font-size: 3rem;
+      letter-spacing: 0.2em;
+      margin-bottom: 10px;
+      white-space: nowrap;
+    }
+    
+    /* Sous-titre */
+    .hero-content .subtitle {
+      font-family: 'Exo 2', sans-serif;
+      font-size: 1.2rem;
+      font-weight: 900;
+      display: inline-block;
+      position: relative;
+      letter-spacing: 0.1em;
+      color: #fff;
+      margin-top: 20px;
+      padding: 0 20px;
+    }
+
+
+
     .apropos p {
       font-size: 20px;
       line-height: 28px;
