@@ -1,7 +1,7 @@
 /* Maxime */
 .maxime {
     
-    background: url('/assets/maxime.webp') center/cover no-repeat;
+    background: url('../maxime.webp') center/cover no-repeat;
     background-attachment: fixed;
     height: 100vh;
     display: flex;
