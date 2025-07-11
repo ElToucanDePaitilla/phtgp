@@ -1,98 +1,83 @@
+/* ───────────── Galerie – conteneur principal ───────────── */
 .gallery {
-  width: 100%;
-  margin: 50px auto 0;
-  position: relative;
-  /* min-height pour éviter trop petit */
-  min-height: 400px;
-  gap: 0;
+  width: 100%;                      /* pleine largeur */
+  margin: 50px auto 0;              /* 50 px en haut, centré */
+  position: relative;               /* contexte pour éléments absolus */
+  min-height: 400px;                /* évite une hauteur trop faible */
+  gap: 0;                           /* sans espacement Masonry */
 }
 
+/* ─────────── Masonry : « grid-sizer » invisible ─────────── */
 .grid-sizer {
-  width: 33.333%;
+  width: 33.333%;                   /* 3 colonnes sur desktop */
 }
 
+/* ────────────────────── Vignette ────────────────────── */
 .grid-item {
   width: 33.333%;
-  margin: 0;                /* plus d’écart vertical */
-  position: relative;       /* pour le pseudo-élément */
-  overflow: hidden;         /* masque tout débordement de l’image */
+  margin: 0;                        /* supprime l’écart vertical */
+  position: relative;               /* permet le ::after */
+  overflow: hidden;                 /* cache le zoom d’image */
 }
 
+/* ─────────────── Image dans la vignette ─────────────── */
 .grid-item img {
-  display: block;
+  display: block;                   /* élimine l’espace inline */
   width: 100%;
   height: auto;
-  object-fit: cover;
-  transform-origin: center center;       /* zoom centré */
-  transition: transform 1s cubic-bezier(0, 0, 0.4, 1);       /* transition du zoom */
+  object-fit: cover;                /* recadre sans déformer */
+  transform-origin: center center;  /* zoom depuis le centre */
+
+  /* transition : PROPRIÉTÉ  DURÉE  COURBE                       DÉLAI */
+  transition: transform 1s cubic-bezier(0, 0, 0.4, 1); /* délai implicite : 0 s */
+  /* ► transform  → propriété animée
+     ► 1s         → durée
+     ► cubic-bezier(0,0,0.4,1) → départ lent, arrivée douce
+     ► pas de délai indiqué → 0 s */
 }
 
+/* ──────────── Voile blanc semi-transparent ──────────── */
 .grid-item::after {
   content: "";
   position: absolute;
-  inset: 0;                              /* top:0; right:0; bottom:0; left:0; */
-  background: rgba(255,255,255,0.4);     /* voile blanc semi-transparent */
-  opacity: 0;
-  transition: transform 1s cubic-bezier(0, 0, 0.4, 1);         /* transition de l’opacité */
-  pointer-events: none;                  /* laisse passer la souris */
+  inset: 0;                         /* couvre toute la vignette */
+  background: rgba(255,255,255,0.4);/* blanc à 40 % d’opacité */
+  opacity: 1;                       /* visible au départ */
+
+  /* transition : PROPRIÉTÉ  DURÉE  COURBE  DÉLAI */
+  transition: opacity 0.5s ease-out;            /* fondu en 0,5 s */
+  pointer-events: none;             /* la souris passe au travers */
 }
 
+/* ───────────── Effets d’interaction ───────────── */
 .grid-item:hover img {
-  transform: scale(1.1);                 /* léger zoom */
+  transform: scale(1.1);            /* zoom avant de 10 % */
+}
+
+/* ─── Le voile se lève (disparaît) 2 s après l’ajout de .reveal ─── */
+.grid-item.reveal::after {
+  opacity: 0;                                   /* cible finale : voile invisible */
+  transition: opacity 0.2s ease-out 0.3s;         /* durée 0,5 s – délai 2 s */
+  /*      ↑ propriété  ↑ durée   ↑ courbe   ↑ délai avant le départ */
 }
 
 .grid-item:hover::after {
-  opacity: 1;                            /* voile visible au survol */
+  opacity: 0.6;                     /* léger voile au survol */
+
+  /* transition : PROPRIÉTÉ  DURÉE  COURBE  DÉLAI */
+  transition: opacity 0.3s ease-in;            /* fondu plus rapide (0,3 s) */
 }
 
+/* ───────────── Section contenant la galerie ───────────── */
 .portfolio {
-  overflow: visible;      /* laisse la galerie pousser la section contact */
-  padding-bottom: 20px;   /* si besoin d’un peu de marge */
+  overflow: visible;                /* laisse la galerie pousser */
+  padding-bottom: 20px;             /* marge interne bas */
 }
 
+/* ───────────── Responsive : 1 colonne mobile ───────────── */
 @media (max-width: 500px) {
   .grid-sizer,
   .grid-item {
-    width: 100%;         /* 1 colonne en mobile */
+    width: 100%;                    /* pleine largeur → 1 colonne */
   }
 }
-
-/* 1) Voile blanc par défaut opaque */
-.grid-item::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: rgba(255,255,255,0.4);
-  opacity: 1;                                   /* voile visible */
-  transition: opacity 0.5s ease-out;            /* disparition en 0.5s */
-  pointer-events: none;
-}
-
-/* 2) Quand on a la classe .reveal, le voile s’efface */
-.grid-item.reveal::after {
-  opacity: 0;                                   /* voile disparu */
-}
-
-/* — Vos règles existantes — */
-.grid-item::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: rgba(255,255,255,0.4);
-  opacity: 1;
-  transition: opacity 0.5s ease-out;
-  pointer-events: none;
-}
-
-.grid-item.reveal::after {
-  opacity: 0;
-}
-
-/* — Nouvelle règle pour le survol — */
-.grid-item:hover::after {
-  /* remet le voile semi-opaque au survol */
-  opacity: 0.6;
-  /* transition plus rapide pour le hover */
-  transition: opacity 0.3s ease-in;
-}
-

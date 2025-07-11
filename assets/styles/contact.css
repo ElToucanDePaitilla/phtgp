@@ -1,108 +1,121 @@
-/* Section Contact */
+/* ───────────────────── SECTION CONTACT (inchangée) ───────────────────── */
 .section-contact {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: stretch;
-    margin-bottom: 100px;
-    padding-left: 120px;
-    background-color: #fff;
-  }
-  
-  /* Colonnes contact */
-  .section-contact .formulaire,
-  .section-contact .photo-contact {
-    width: 50%;
-  }
-  
-  /* Form container */
-  .formulaire {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start !important;
-  }
-  
-  .contact-container {
-    background-color: #fff;
-    padding: 30px;
-    border-radius: 0px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.0);
-    text-align: center;
-    width: 100%;
-  }
-  
-  /* Photo côté contact */
-  .section-contact .photo-contact {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-  }
-  .section-contact .photo-contact img {
-    min-width: 100%;
-    min-height: 100%;
-    object-fit: cover;
-    object-position: center;
-    display: block;
-  }
-  
-  /* Styles du formulaire */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: stretch;
+  margin-bottom: 100px;
+  padding-left: 120px;
+  background-color: #fff;
+}
 
-  .contact-form {
-    margin-left: 20px;
-    padding-right: 50px;
-  }
+/* Colonnes */
+.section-contact .formulaire,
+.section-contact .photo-contact {
+  width: 50%;
+}
 
-  .contact-form .form-group {
-    margin-bottom: 20px;
-    text-align: left;
-  }
-  .contact-form label {
-    font-family: 'Exo 2', sans-serif;
-    font-weight: 600;
-    color: #333;
-    font-size: 14px;
-    margin-bottom: 5px;
-    display: block;
-  }
-  #message,
-  input,
-  label,
-  button {
-    font-family: 'Exo 2', sans-serif;
-    font-size: 14px;
-  }
-  .contact-form input,
-  .contact-form textarea {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    transition: border-color 0.3s ease;
-  }
-  .contact-form input:focus,
-  .contact-form textarea:focus {
-    border-color: #0056b3;
-    outline: none;
-  }
-  .contact-form button {
-    width: 100%;
-    padding: 12px;
-    background-color: #808080; 
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    color:#ffffff;
-  }
-  .contact-form button:hover {
-     background-color: #969696;
-     color: #fff;
-  }
-  .contact-form button:active {
-    background-color: #d3d3d3;
-    
-    
-  }
-  
+/* ───────────── Colonne FORMULAIRE ───────────── */
+.formulaire {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start !important;
+}
+
+.contact-container {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 0;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0);
+  text-align: center;
+  width: 100%;
+}
+
+/* Champs, labels, bouton */
+.contact-form { margin-left: 20px; padding-right: 50px; }
+.contact-form .form-group { margin-bottom: 20px; text-align: left; }
+.contact-form label {
+  font-family: 'Exo 2', sans-serif;
+  font-weight: 600;
+  color: #333;
+  font-size: 14px;
+  margin-bottom: 5px;
+  display: block;
+}
+#message,
+input,
+label,
+button {
+  font-family: 'Exo 2', sans-serif;
+  font-size: 14px;
+}
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  transition: border-color 0.3s ease;
+}
+.contact-form input:focus,
+.contact-form textarea:focus { border-color: #0056b3; outline: none; }
+.contact-form button {
+  width: 100%;
+  padding: 12px;
+  background:#808080;
+  color:#fff;
+  border:none;
+  border-radius:5px;
+  cursor:pointer;
+  transition:background 0.3s ease;
+}
+.contact-form button:hover  { background:#969696; }
+.contact-form button:active { background:#d3d3d3; }
+
+/* ───────────── Colonne PHOTO ───────────── */
+.section-contact .photo-contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.section-contact .photo-contact img {
+  min-width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
+/* ───────────────────── Effet « slide-up » sur .apropos p ───────────────────── */
+
+/* Animation clé */
+@keyframes aproposFade {
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* État initial : caché + 15 px plus bas */
+.apropos p {
+  font-family: 'Exo 2', sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: left;
+  margin-bottom: 20px;
+  padding: 0 50px;
+
+  opacity: 0;
+  transform: translateY(15px);
+}
+
+/* Quand .apropos reçoit .reveal → on lance l’animation */
+.apropos.reveal p {
+  animation: aproposFade 0.6s ease-out forwards;
+}
+
+/* Décalage progressif (stagger) */
+.apropos.reveal p:nth-of-type(1) { animation-delay: 0.1s; }
+.apropos.reveal p:nth-of-type(2) { animation-delay: 0.2s; }
+.apropos.reveal p:nth-of-type(3) { animation-delay: 0.3s; }
+.apropos.reveal p:nth-of-type(4) { animation-delay: 0.4s; }
+.apropos.reveal p:nth-of-type(5) { animation-delay: 0.5s; }
+.apropos.reveal p:nth-of-type(6) { animation-delay: 0.6s; }

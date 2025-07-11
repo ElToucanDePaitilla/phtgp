@@ -1,6 +1,5 @@
-/* Maxime */
+/* ────────── Maxime : section plein écran avec image fixe ────────── */
 .maxime {
-    
     background: url('../maxime.webp') center/cover no-repeat;
     background-attachment: fixed;
     height: 100vh;
@@ -9,35 +8,45 @@
     justify-content: center;
     position: relative;
     will-change: background-position;
-}
-
-
-/* Contenu texte */
-.maxime-content {
-    position: absolute;
-    bottom: 10%;      /* ajustez la hauteur depuis le bas */
-    left: 5%;        /* ajustez la marge depuis la gauche */
-    transform: none; /* on supprime le translateX */
-    width: 40vw;     /* on donne une largeur de 40% de la vue */
-    /* z-index, will-change… restent si nécessaire */
-}
-
-.maxime-content {
-    margin: 0;              /* pour bien coller au conteneur */
-    width: 100%;            /* remplit tout le .maxime-content */  
-    position: absolute;     /* on sort du flux */
-    bottom: 5%;             /* espacement depuis le bas */
-    left: 5%;               /* espacement depuis la gauche */
-    width: 40vw;            /* max 40 % de la largeur de la fenêtre */
-    transform: none;        /* supprime tout translate hérité */
   }
-
-
-/* Sous-titre */
-.maxime-content .maxime-subtitle {
+  
+/* ─── Sentinelle : invisible mais occupe 1 px en bas de la section ─── */
+.maxime-sentinel {
+    position: absolute;
+    bottom: 0;          /* exactement au pied du background */
+    left: 0;
+    width: 100%;
+    height: 1px;        /* taille minuscule, suffisante pour l'Observer */
+    pointer-events: none;
+    opacity: 0;         /* totalement invisible */
+  }
+  
+  /* ─── Vos règles .maxime-content restent telles quelles ─── */
+  .maxime-content {
+    position: absolute;
+    bottom: 15%;
+    left: 5%;
+    width: 40vw;
+    margin: 0;
+  
+    opacity: 0;
+    transform: translateY(30px);
+    will-change: opacity, transform;
+  
+    transition: opacity   0.9s ease-out,
+                transform 1s ease-out;
+  }
+  
+  .maxime-content.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  
+  /* ────────── Sous-titre ────────── */
+  .maxime-content .maxime-subtitle {
     font-style: italic;
     font-size: 2rem;
-    letter-spacing: 0.2em;
     letter-spacing: 0.1em;
     color: #fff;
     font-weight: lighter;
@@ -46,5 +55,5 @@
     position: relative;
     margin-top: 20px;
     padding: 0 20px;
-    
-}
+  }
+  
