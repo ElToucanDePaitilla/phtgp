@@ -33,9 +33,9 @@
   }
   .apropos p {
     font-family: 'Exo 2', sans-serif;
-    font-size: 16px;
+    font-size: 1.1rem !important;
     text-align: left;
-    line-height: 20px;
+    line-height: 1.5rem !important;
     margin-bottom: 20px;
     padding: 0 50px;
   }

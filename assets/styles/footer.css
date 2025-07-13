@@ -1,5 +1,6 @@
 /* Footer */
 footer {
+  font-family: 'Exo 2', sans-serif;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -36,6 +37,7 @@ footer {
 
 /* Mentions légales et liens */
 footer .mentions {
+  font-size: 20px;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -59,7 +61,7 @@ footer p {
 
 /* Animation nexus */
 .nexus {
-  color: yellow;
+  
   font-weight: bolder;
   display: inline-block;
   text-decoration: none;
@@ -70,6 +72,7 @@ footer p {
 
 .nexus:hover {
   animation: vibrate 0.3s linear infinite;
+  color: #fff;
 }
 
 .nexus:active {
@@ -94,4 +97,88 @@ footer p {
   80% { transform: translate(-1px, 1px) rotate(1deg); }
   90% { transform: translate(1px, -1px) rotate(0deg); }
   100% { transform: translate(0, 0) rotate(0deg); }
+}
+
+/* Effet de survol des liens --------------------------------------------------*/
+footer a {
+  position: relative;
+  color: #c8c8c8;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+footer a:hover {
+  color: #ffffff;
+}
+
+/* — ESPACEMENT ENTRE LES LIENS — */
+footer .mentions {
+  gap: 1.2rem;          /* espace horizontal ⟷ (12-14 px) */
+  flex-wrap: wrap;      /* retour à la ligne sur petits écrans */
+}
+
+footer .mentions a {     /* si vous préférez des marges individuelles */
+  margin: 0 6px;        /* 6 px à gauche et à droite */
+}
+
+/* Masquer toutes les modales par défaut */
+#legal-modal,
+#cookies-modal,
+#privacy-modal,
+#terms-modal {
+  display: none;
+  position: fixed;
+  inset: 0;               /* top:0; right:0; bottom:0; left:0; */
+  background: rgba(0,0,0,0.6);
+  overflow-y: auto;
+  z-index: 1000;
+}
+
+/* Quand on ajoute .active, on affiche */
+#legal-modal.active,
+#cookies-modal.active,
+#privacy-modal.active,
+#terms-modal.active {
+  display: block;
+}
+
+/* Conteneur du contenu */
+.legal-content {
+  background: #fff;
+  max-width: 800px;
+  width: 90%;
+  margin: 60px auto;
+  padding: 20px 30px;
+  border-radius: 8px;
+  position: relative;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Bouton fermer */
+.legal-content .close-btn {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #333;
+}
+
+.titre-mention {
+  font-size: 40px;
+  font-weight: bolder;
+  margin: 50px auto 70px auto;
+  text-align: center;
+
+}
+
+.legal-content h2 {
+  text-align: left;
+  margin-top: 50px;
+  margin-bottom: 30px;
+ }
+
+.legal-content p:last-of-type {
+  margin-bottom: 50px;
 }
