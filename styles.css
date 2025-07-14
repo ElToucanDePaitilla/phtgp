@@ -5,82 +5,10 @@
 @import "assets/styles/hero.css";
 @import "assets/styles/social.css";
 @import "assets/styles/about.css";
-@import "assets/styles/portfolio.css";
 @import "assets/styles/contact.css";
 @import "assets/styles/footer.css";
 @import "assets/styles/maxime.css";
-@import "assets/styles/responsive.css";
 @import "assets/styles/masonry.css";
 @import "assets/styles/themes-gallerie.css";
-@import "assets/styles/modal.css";
-@import "assets/styles/modal-legal.css";
-@import "assets/styles/carrousel.css";
-
-/* ==============================================================
-   MODAL SWIPER OVERRIDES — Ne peut plus être écrasé
-   ============================================================== */
-
-   html body #modal.active .accueil-main {
-    margin: 0 !important;             /* supprime tout décalage */
-    padding: 0 !important;
-    width: 100% !important;           /* plein écran modal */
-    height: 100% !important;
-    max-width: 100% !important;
-    max-height: 100% !important;
-  }
-  
-  html body #modal.active .accueil-main .swiper {
-    width: 100% !important;           /* plein conteneur */
-    height: 100% !important;
-    position: relative !important;
-  }
-  
-  html body #modal.active .accueil-main .swiper-wrapper,
-  html body #modal.active .accueil-main .swiper-slide {
-    width: 100% !important;
-    height: 100% !important;
-    display: flex !important;
-    align-items: center !important;
-    justify-content: center !important;
-  }
-  
-  html body #modal.active .accueil-main .swiper-slide img {
-    width: auto !important;           /* ne force pas la largeur */
-    height: auto !important;          /* ne force pas la hauteur */
-    max-width: 100% !important;       /* tient dans le slide */
-    max-height: 100% !important;
-    object-fit: contain !important;   /* visible en entier */
-    object-position: center !important;
-    background-color: transparent !important;
-    z-index: 11000 !important;        /* sous les contrôles */
-  }
-  
-  /* — Contrôles toujours au-dessus — */
-  html body #modal.active .close-btn,
-  html body #modal.active .swiper-button-next,
-  html body #modal.active .swiper-button-prev,
-  html body #modal.active .swiper-pagination {
-    z-index: 11001 !important;
-    opacity: 1 !important;
-  }
-  
-  /* Flèches — placées à l’intérieur */
-  html body #modal.active .swiper-button-next {
-    right: 10px !important;
-    left: auto !important;
-  }
-  
-  html body #modal.active .swiper-button-prev {
-    left: 10px !important;
-    right: auto !important;
-  }
-  
-  /* Pagination */
-  html body #modal.active .swiper-pagination {
-    bottom: 10px !important;
-    right: 10px !important;
-  }
-  
-
-
-
+@import "assets/styles/responsive.css";
+@import "assets/styles/diaporama.css";

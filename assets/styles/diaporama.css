@@ -1,0 +1,90 @@
+/* --- MODALE ------------------------------------------------------ */
+#modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,.92);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+#modal.active { display: flex; }
+
+.modal-content {
+  position: relative;
+  width: 90vw;
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px; right: 10px;
+  font-size: 2rem;
+  color: #fff;
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 1010;
+}
+
+/* --- SWIPER ------------------------------------------------------ */
+.swiper {
+  width: 100%;
+  height: 100%;
+  background: transparent;
+}
+
+.swiper-wrapper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  width: 100% !important;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  background: transparent;
+  /* S’assure qu’UNE SEULE image s’affiche par slide */
+  overflow: hidden;
+}
+
+.swiper-zoom-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.swiper-slide img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  background: #000;
+  border-radius: 4px;
+  box-shadow: 0 2px 10px #0007;
+  cursor: grab;
+  display: block;
+  margin: auto;
+}
+.swiper-slide-zoomed img { cursor: move; }
+
+/* Flèches & pagination visibles sur fond sombre */
+.swiper-button-next,
+.swiper-button-prev,
+.swiper-pagination {
+  color: #fff;
+  z-index: 1020;
+}
+
+/* Responsive modale pour petits écrans */
+@media (max-width: 700px) {
+  .modal-content { width: 99vw; height: 75vh; }
+  .swiper-slide img { max-width: 98vw; max-height: 72vh; }
+}

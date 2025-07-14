@@ -32,7 +32,7 @@
     <a href="#anchor-portfolio">PORTFOLIO</a>
     <a href="#anchor-contact">CONTACT</a>
     <a href="#">EXPOS & EVENTS</a>
-    <img src="assets/user02.png" alt="Utilisateur" id="user">
+    <img src="assets/images/index/user02.png" alt="Utilisateur" id="user">
     <a href="#" class="connect">Connexion</a>
 
     <!-- Burger menu icon -->
@@ -44,8 +44,8 @@
   </nav>
   <section class="hero"  id="anchor-home">
     <div class="social">
-      <a href="https://www.facebook.com/haurymichel23/" target="_blanck"><img src="assets/facebook.png" alt="Facebook"></a>
-      <a href="https://www.instagram.com/michel23430/" target="_blanck"><img src="assets/instagram.png" alt="Twitter"></a>
+      <a href="https://www.facebook.com/haurymichel23/" target="_blanck"><img src="assets/images/index/facebook.png" alt="Facebook"></a>
+      <a href="https://www.instagram.com/michel23430/" target="_blanck"><img src="assets/images/index/instagram.png" alt="Twitter"></a>
     </div>
     <div class="hero-content">
         <h1>MICHEL HAURY</h1>
@@ -59,7 +59,7 @@
   <section class="section-apropos">
 
     <div class="portrait">
-        <img src="assets/portrait02.png" alt="portait de Michel Haury">
+        <img src="assets/images/index/portrait02.png" alt="portait de Michel Haury">
     </div>
     <div class="apropos">
         <h2>À propos</h2>
@@ -103,9 +103,9 @@
              src="assets/images/entetes-galeries/nature.webp"
              alt="Nature">
       </div>
-      <div class="grid-item" data-gallery="natures-mortes">
+      <div class="grid-item" data-gallery="nature-morte">
         <img loading="lazy"
-             src="assets/images/entetes-galeries/natures-mortes.webp"
+             src="assets/images/entetes-galeries/nature-morte.webp"
              alt="Natures mortes">
       </div>
       <div class="grid-item"data-gallery="nuit">
@@ -113,12 +113,12 @@
              src="assets/images/entetes-galeries/nuit.webp"
              alt="Nuit">
       </div>
-      <div class="grid-item" data-gallery="paysages">
+      <div class="grid-item" data-gallery="paysage">
         <img loading="lazy"
-             src="assets/images/entetes-galeries/paysages.jpg"
+             src="assets/images/entetes-galeries/paysage.webp"
              alt="Paysages">
       </div>
-      <div class="grid-item" data-gallery="portraits">
+      <div class="grid-item" data-gallery="portrait">
         <img loading="lazy"
              src="assets/images/entetes-galeries/portrait.jpg"
              alt="Portraits">
@@ -126,30 +126,24 @@
     </div>
   </section>
 
-    <!-- Modale full-screen -->
-  <div id="modal">
-    <div class="modal-content">
-      <span class="close-btn" aria-label="Fermer la modale">&times;</span>
-      <main class="accueil-main">
-        <div class="swiper" id="gallery-slides">
-          <div class="swiper-wrapper">
-            <!-- Slides générées dynamiquement -->
-          </div>
-          <div class="swiper-button-next"></div>
-          <div class="swiper-button-prev"></div>
-          <div class="swiper-pagination"></div>
-        </div>
-      </main>
+  <!-- MODALE + SWIPER -->
+<div id="modal">
+  <div class="modal-content">
+    <button class="close-btn" aria-label="Fermer">&times;</button>
+    <div class="swiper">
+      <div class="swiper-wrapper"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-pagination"></div>
     </div>
   </div>
-
+</div>
 
   <section class="maxime">
     <div class="maxime-content">
       <p class="maxime-subtitle">« De la magie du regard naissent les émotions »</p>
     </div>
   </section>
-
 
   <section class="section-contact" id="anchor-contact">
     <!-- sentinelle : 1 px, totalement invisible, sert de déclencheur -->
@@ -185,7 +179,7 @@
           </form>
       </div>            
       <div class="photo-contact">
-          <img src="assets/contact.webp" alt="Photo formulaire de contact: Arbres majestueux">
+          <img src="assets/images/index/contact.webp" alt="Photo formulaire de contact: Arbres majestueux">
       </div>
   </section>
 
@@ -195,7 +189,7 @@
   <footer>
     <div class="back-to-top">
       <a href="#top">
-        <img src="assets/up-arrow.png" alt="Haut de page">
+        <img src="assets/images/index/up-arrow.png" alt="Haut de page">
         Haut de page
       </a>
     </div>
@@ -507,77 +501,18 @@
   <script src="assets/scripts/apropos-reveal.js" defer></script>
   <script src="assets/scripts/maxime-reveal.js" defer></script>
   <script src="assets/scripts/parallax.js" defer></script>
-  <script src="assets/scripts/modal.js" defer></script>
-  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/scripts/gallery-loader.js" defer></script>
   <script src="assets/scripts/modal-mentions.js" defer></script>
-  <!--<script src="assets/scripts/gallery-lightbox.js" defer></script>-->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/scripts/generateGallery.js" defer></script>
+  <script src="assets/scripts/gallery.js" defer></script>
+ 
 
-
+ 
   
  <style>
-  /* 0) Annule margin-top/height sur .accueil-main */
-  #modal.active .accueil-main {
-    margin-top: 0 !important;
-    padding:    0 !important;
-    width:      100% !important;
-    height:     100% !important;
-    max-width:  100% !important;
-    max-height: 100% !important;
-  }
 
-  /* 1) Full-screen Swiper container */
-  #modal.active .accueil-main .swiper {
-    width: 100% !important;
-    height: 100% !important;
-    overflow: hidden !important;
-  }
 
-  /* 2) Wrapper et slides */
-  #modal.active .swiper-wrapper,
-  #modal.active .swiper-slide {
-    width: 100% !important;
-    height: 100% !important;
-    display: flex !important;
-    align-items: center !important;
-    justify-content: center !important;
-  }
-
-  /* 3) Images contain */
-  #modal.active .swiper-slide img {
-    width:         auto !important;
-    height:        auto !important;
-    max-width:     100% !important;
-    max-height:    100% !important;
-    object-fit:    contain !important;
-    object-position: center !important;
-    z-index:       1 !important;
-  }
-
-  /* 4) Contrôles au-dessus */
-  #modal .close-btn,
-  #modal.active .swiper-button-next,
-  #modal.active .swiper-button-prev,
-  #modal.active .swiper-pagination {
-    z-index: 11000 !important;
-    opacity: 1       !important;
-  }
-  #modal.active .swiper-button-next { right: 10px !important; left: auto !important; }
-  #modal.active .swiper-button-prev { left:  10px !important; right: auto !important; }
-  /* Positionnement centré de la pagination et affichage */
-  #modal.active .swiper-pagination {
-    bottom: 20px !important;
-    left: 50% !important;
-    right: auto !important;
-    transform: translateX(-50%) !important;
-    display: block !important;
-  }
 </style>
-
-
-
-
-  
 
 </body>
 </html>

@@ -1,7 +1,7 @@
 /* Hero */
 .hero {
   /* chemin relatif : on remonte d’un niveau depuis assets/styles/ */
-  background: url('../accueil.webp') center/cover no-repeat;
+  background: url('../images/index/accueil.webp') center/cover no-repeat;
   height: 100vh;
   display: flex;
   align-items: center;
