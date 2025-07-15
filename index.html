@@ -58,7 +58,7 @@
     <a href="#anchor-apropos">À PROPOS</a>
     <a href="#anchor-portfolio">PORTFOLIO</a>
     <a href="#anchor-contact">CONTACT</a>
-    <a href="#">EXPOS & EVENTS</a>
+    <a href="#" class="mention-link" data-modal-target="actus-modal">ACTUS & EXPOS</a>   
     <img src="assets/images/index/user02.png" alt="Icone utilisateur" id="user">
     <a href="#" class="connect">Connexion</a>
 
@@ -220,6 +220,7 @@
         Haut de page
       </a>
     </div>
+
     <div class="mentions">
       <a href="#" class="mention-link" data-modal-target="legal-modal">
         Mentions légales
@@ -232,6 +233,9 @@
       </a>
       <a href="#" class="mention-link" data-modal-target="terms-modal">
         Conditions d’utilisation
+      </a>
+      <a href="#" class="mention-link" data-modal-target="actus-modal">
+        Actus
       </a>
     </div>
 
@@ -257,8 +261,11 @@
 
   </footer>
 
+
 <section class="contenu-modales">
-    <!-- Modale Mentions légales -->
+    
+ 
+  <!-- Modale Mentions légales -->
     <div id="legal-modal">
       <div class="legal-content">
         <span class="close-btn" aria-label="Fermer la modale">&times;</span>
@@ -523,7 +530,99 @@
           compétence exclusive est attribuée aux tribunaux compétents de Limoges.
         </p>
       </div>
-    </div>
+    </div> 
+
+   
+     <!-- Modale Actus -->
+     <div id="actus-modal">
+      <div class="legal-content">
+        <span class="close-btn" aria-label="Fermer la modale">&times;</span>
+
+        <main class="actus">
+          <section>
+            
+              
+            <div class="cartes-container">
+              <h2>À noter sur vos agendas !</h2>  
+              <a href="https://bibliothequedechateluslemarcheix.blogspot.com/search?q=haury" target="_blank" rel="noopener noreferrer">
+              <img
+                 class="carte" 
+                 src="assets/images/actus/Michel_Haury_Photographe-randonnée_photographique_Châtelus-le-Marcheix.webp" 
+                 alt="Affiche Michel Haury Photographe - randonnée photographique dans la Creuse, Association des lecteurs de Châtelus-le-Marcheix, Bibliothèque de Châtelus-le-Maracheix, 23430 Châtelus-le-Marcheix"
+                 />
+              </a>
+           <h2>Vous les avez manquées ?</h2>
+              <a href="https://www.facebook.com/photo/?fbid=1671548516742341&set=a.100975827132959" target="_blank" rel="noopener noreferrer">
+                <img
+                  class="carte"
+                  src="assets/images/actus/remiseprix2024dec.webp"
+                  alt="Affiche Michel Haury Photographe - Remise des prix du concours photos 2024 à Châtelus-le-Marcheix"
+                />
+              </a>
+  
+              <a href="https://www.facebook.com/photo/?fbid=1671548516742341&set=a.100975827132959" target="_blank" rel="noopener noreferrer">
+                <img
+                  class="carte"
+                  src="assets/images/actus/concoursphotos2024juin.webp"
+                  alt="Affiche Michel Haury Photographe - Concours photos 2024 à Châtelus-le-Marcheix 'La pierre dans tous ses états"
+                />
+              </a>
+  
+              <a href="https://www.facebook.com/photo/?fbid=1678219402741919&set=a.100975827132959" target="_blank" rel="noopener noreferrer">
+                <img
+                  class="carte"
+                  src="assets/images/actus/expo2024nov.webp"
+                  alt="Affiche Michel Haury Photographe - exposition nov 2024 à Châtelus-le-Marcheix 'Exposition Photographique'"
+                />
+              </a>
+              
+              <a href="https://bibliothequedechateluslemarcheix.blogspot.com/search?q=haury" target="_blank" rel="noopener noreferrer">
+                <img
+                  class="carte"
+                  src="assets/images/actus/expo2024juillet.webp"
+                  alt="Affiche Michel Haury Photographe - exposition juillet 2024 à Châtelus-le-Marcheix 'Les vitraux de l'Eglise et le Thaurion'"
+                />
+              </a>
+           
+              <a href="https://bibliothequedechateluslemarcheix.blogspot.com/search?q=haury" target="_blank" rel="noopener noreferrer">
+                <img
+                  class="carte"
+                  src="assets/images/actus/rando-photo2023.webp"
+                  alt="Affiche Michel Haury Photographe - randonnée photo 2023 à Châtelus-le-Marcheix 'Les vitraux de l'Eglise et le Thaurion'"
+                />
+              </a>
+  
+              <a href="https://bibliothequedechateluslemarcheix.blogspot.com/search?q=haury" target="_blank" rel="noopener noreferrer">
+                <img
+                  class="carte"
+                  src="assets/images/actus/expo2018aout.webp"
+                  alt="Affiche Michel Haury Photographe - exposition août 2018 'Tempête de neige sur un été Creusois'"
+                />
+              </a>
+  
+              <a href="https://www.laquincaillerie.tl/michel-haury-regards/" target="_blank" rel="noopener noreferrer">
+                <img
+                  class="carte"
+                  src="assets/images/actus/expo2018mars.webp"
+                  alt="Affiche Michel Haury Photographe - exposition 2018 'Regards'"
+                />
+              </a>
+  
+              <a href="https://bibliothequedechateluslemarcheix.blogspot.com/search?q=haury" target="_blank" rel="noopener noreferrer">
+                <img
+                  class="carte"
+                  src="assets/images/actus/expo2017fevrier.webp"
+                  alt="Affiche Michel Haury Photographe - exposition 2017 'Regards'"
+                />
+              </a>
+  
+           </div>
+          </section>
+        </main>
+        
+      </div>
+    </div> 
+   
 </section>
 
 
@@ -542,16 +641,10 @@
   <script src="assets/scripts/parallax.js" defer></script>
   <script src="assets/scripts/modal-mentions.js" defer></script>
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/scripts/generateGallery.js" defer></script>
+  
   <script src="assets/scripts/gallery.js" defer></script>
  
 
- 
-  
- <style>
-
-
-</style>
 
 </body>
 </html>

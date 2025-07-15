@@ -1,0 +1,82 @@
+.actus {
+    max-width: 700px;    /* ou la largeur que vous souhaitez */
+    padding: 0 10px;      
+    box-sizing: border-box;
+  }
+  
+
+.actus h2 {
+    font-size: 38px;
+    margin-top: 120px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: lighter;
+    text-align: center;
+}
+
+/* Flexbox pour centrer les cartes et permettre le wrap */
+.cartes-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+/* Styles pour chaque lien de carte */
+.cartes-container a {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Conteneur visuel de la carte */
+.carte {
+    width: 100%;              /* remplit son conteneur (<a>) */
+    max-width: 700px;         /* ne dépassera jamais 500px */
+    margin: 30px auto;        /* centré et espacé verticalement */
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+    border: 1px solid #969696;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    border-radius: 8px;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.carte:hover {
+    transform: translateY(-1px);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Images à l'intérieur des cartes */
+.carte img {
+    width: 100%;              /* gardent leur ratio et remplissent la carte */
+    height: auto;
+    display: block;
+    margin-bottom: 10px;
+}
+
+/* Texte dans la carte, si utilisé */
+.carte p {
+    margin: 0;
+    font-size: 22px;
+    background-color: #ffff33;
+    display: inline-block;
+    padding: 5px 24px;
+    line-height: 1.5;
+}
+
+@media screen and (max-width: 700px) {
+    .actus h2 {
+      margin-top: 50px;
+      margin-bottom: 30px;
+     
+      /* ou de façon raccourcie : margin: 50px 0; */
+    }
+
+    .carte {
+        margin: 10px auto 30px auto;        /* centré et espacé verticalement */
+        
+    }
+  }
+  

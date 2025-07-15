@@ -52,6 +52,7 @@
 /* ───────────── Effets d’interaction ───────────── */
 .grid-item:hover img {
   transform: scale(1.1);            /* zoom avant de 10 % */
+  cursor: pointer;
 }
 
 /* ─── Le voile se lève (disparaît) 2 s après l’ajout de .reveal ─── */
@@ -62,7 +63,8 @@
 }
 
 .grid-item:hover::after {
-  opacity: 0.6;                     /* léger voile au survol */
+  opacity: 0.6;/* léger voile au survol */
+  cursor: pointer;
 
   /* transition : PROPRIÉTÉ  DURÉE  COURBE  DÉLAI */
   transition: opacity 0.3s ease-in;            /* fondu plus rapide (0,3 s) */

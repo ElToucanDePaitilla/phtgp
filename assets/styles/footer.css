@@ -42,6 +42,11 @@ footer .mentions {
   flex-direction: row;
   justify-content: center;
   margin: 0px 0 20px;
+  gap: 1.2rem;
+  flex-wrap: wrap;
+}
+footer .mentions a {
+  margin: 0 6px;
 }
 
 footer .copyright {
@@ -61,7 +66,6 @@ footer p {
 
 /* Animation nexus */
 .nexus {
-  
   font-weight: bolder;
   display: inline-block;
   text-decoration: none;
@@ -69,16 +73,13 @@ footer p {
   animation: vibrate 0.3s linear infinite;
   margin-bottom: 30px;
 }
-
 .nexus:hover {
   animation: vibrate 0.3s linear infinite;
   color: #fff;
 }
-
 .nexus:active {
   transform: scale(0.95);
 }
-
 .nexus a {
   display: flex;
   justify-content: center;
@@ -106,43 +107,11 @@ footer a {
   text-decoration: none;
   transition: color 0.3s ease;
 }
-
 footer a:hover {
   color: #ffffff;
 }
 
-/* — ESPACEMENT ENTRE LES LIENS — */
-footer .mentions {
-  gap: 1.2rem;          /* espace horizontal ⟷ (12-14 px) */
-  flex-wrap: wrap;      /* retour à la ligne sur petits écrans */
-}
-
-footer .mentions a {     /* si vous préférez des marges individuelles */
-  margin: 0 6px;        /* 6 px à gauche et à droite */
-}
-
-/* Masquer toutes les modales par défaut */
-#legal-modal,
-#cookies-modal,
-#privacy-modal,
-#terms-modal {
-  display: none;
-  position: fixed;
-  inset: 0;               /* top:0; right:0; bottom:0; left:0; */
-  background: rgba(0,0,0,0.6);
-  overflow-y: auto;
-  z-index: 1000;
-}
-
-/* Quand on ajoute .active, on affiche */
-#legal-modal.active,
-#cookies-modal.active,
-#privacy-modal.active,
-#terms-modal.active {
-  display: block;
-}
-
-/* Conteneur du contenu */
+/* Conteneur du contenu de modale dans le footer (facultatif si non utilisé ici) */
 .legal-content {
   background: #fff;
   max-width: 800px;
@@ -154,8 +123,6 @@ footer .mentions a {     /* si vous préférez des marges individuelles */
   box-shadow: 0 4px 10px rgba(0,0,0,0.2);
   font-family: Arial, Helvetica, sans-serif;
 }
-
-/* Bouton fermer */
 .legal-content .close-btn {
   position: absolute;
   top: 12px;
@@ -164,27 +131,20 @@ footer .mentions a {     /* si vous préférez des marges individuelles */
   cursor: pointer;
   color: #333;
 }
-
 .titre-mention {
   font-size: 40px;
   font-weight: bolder;
   margin: 50px auto 70px auto;
   text-align: center;
-
 }
-
 .legal-content h2 {
   text-align: left;
   margin-top: 50px;
   margin-bottom: 30px;
- }
-
+}
 .legal-content p:last-of-type {
   margin-bottom: 50px;
 }
-
-
-/*icones sociales*/
 
 /* Réseaux sociaux du footer */
 .footer-social {
@@ -195,14 +155,12 @@ footer .mentions a {     /* si vous préférez des marges individuelles */
   justify-content: center;
   gap: 30px;
 }
-
 .footer-social a img {
   width: 40px;
   height: 40px;
   filter: brightness(0.7) invert(1);
   transition: opacity 0.3s, filter 0.3s;
 }
-
 .footer-social a img:hover {
   opacity: 0.7;
   filter: brightness(1) invert(0);
