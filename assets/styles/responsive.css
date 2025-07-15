@@ -135,7 +135,7 @@
     font-size: 4rem;
     letter-spacing: 0.3em;
     margin-bottom: 10px;
-    line-height: 80px;
+    line-height: 100px;
     white-space: wrap;
   }
 
@@ -155,16 +155,16 @@
 @media (max-width: 430px) {
 
   .hero-content h1 {
-    font-size: 3rem;
+    font-size: 2.7rem;
     letter-spacing: 0.3em;
     margin-bottom: 10px;
-    line-height: 80px;
+    line-height: 60px;
     white-space: wrap;
   }
 
 /* Sous-titre */
 .hero-content .subtitle {
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   font-weight: 900;
   display: inline-block;
   position: relative;
@@ -176,3 +176,25 @@
 }
 
 
+@media (max-width: 350px) {
+
+  .hero-content h1 {
+    font-size: 2rem;
+    letter-spacing: 0.3em;
+    margin-bottom: 10px;
+    line-height: 80px;
+    white-space: wrap;
+  }
+
+/* Sous-titre */
+.hero-content .subtitle {
+  font-size: 1.2rem;
+  font-weight: 900;
+  display: inline-block;
+  position: relative;
+  letter-spacing: 0.1em;
+  margin-top: 20px;
+  padding: 0 20px;
+}
+
+}
