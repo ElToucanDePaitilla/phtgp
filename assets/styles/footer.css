@@ -182,3 +182,28 @@ footer .mentions a {     /* si vous préférez des marges individuelles */
 .legal-content p:last-of-type {
   margin-bottom: 50px;
 }
+
+
+/*icones sociales*/
+
+/* Réseaux sociaux du footer */
+.footer-social {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 30px;
+}
+
+.footer-social a img {
+  width: 40px;
+  height: 40px;
+  filter: brightness(0.7) invert(1);
+  transition: opacity 0.3s, filter 0.3s;
+}
+
+.footer-social a img:hover {
+  opacity: 0.7;
+  filter: brightness(1) invert(0);
+}

@@ -42,17 +42,13 @@
     line-height: 28px;
   }
   .social {
-    left: 10px;
-    top: 70%;
+    display: none;
   }
   .social a img {
     width: 60px;
     height: 60px;
   }
-  }
-  
-  /* Media Query à 900px */
-  @media (max-width: 900px) {
+
   .burger { display: flex; }
   .hero { height: 100vh; }
 
@@ -76,8 +72,6 @@
     padding: 0 20px;
   }
 
-
-
   .apropos p {
     font-size: 20px;
     line-height: 28px;
@@ -85,9 +79,72 @@
   
   footer .mentions {
     flex-direction: column;
+    align-items: center;
     }
   
+
+/*----------------------------------------- CONTACT ----------------------------------*/
+
+  .section-contact {
+    flex-direction: column;
+    align-items: center;
+    margin: 0 0 50px 0;
+    padding: 0;
   }
+
+  .section-contact .formulaire {
+    width: 90%;
+  }
+
+  .section-contact .photo-contact {
+    width: 100%;
+  }
+
+  .formulaire {
+    align-items: center !important;
+  }
+
+  .contact-container {
+    padding: 0 0 50px 0;
+  }
+
+  .contact-form {
+    margin-left: 0;
+    margin-right: 0;
+    padding-right: 0;
+  }
+
+/* Réseaux sociaux du footer */
+.footer-social {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 30px;
+}
+
+.footer-social a img {
+  width: 60px;
+  height: 60px;
+  filter: brightness(0.7) invert(1);
+  transition: opacity 0.3s, filter 0.3s;
+}
+
+.footer-social a img:hover {
+  opacity: 0.7;
+  filter: brightness(1) invert(0);
+}
+
+
+
+}
+
+
+
+
+
+
 
 
   
