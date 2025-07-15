@@ -54,11 +54,12 @@
 <body>
 
   <nav class="navbar">
-    <a href="#anchor-home" class="active">ACCUEIL</a>
+    <a href="#anchor-home">ACCUEIL</a>
     <a href="#anchor-apropos">À PROPOS</a>
     <a href="#anchor-portfolio">PORTFOLIO</a>
     <a href="#anchor-contact">CONTACT</a>
-    <a href="#" class="mention-link" data-modal-target="actus-modal">ACTUS & EXPOS</a>   
+    <a href="#" class="mention-link" data-modal-target="actus-modal">ACTUS & EXPOS</a>  
+    <a href="#anchor-mentions">MENTIONS</a> 
     <img src="assets/images/index/user02.png" alt="Icone utilisateur" id="user">
     <a href="#" class="connect">Connexion</a>
 
@@ -68,6 +69,19 @@
       <span></span>
       <span></span>
     </div>
+
+    <!-- Menu mobile, à afficher/masquer via JS et CSS -->
+      <div class="burger-menu">
+        <a href="#anchor-home">ACCUEIL</a>
+        <a href="#anchor-apropos">À PROPOS</a>
+        <a href="#anchor-portfolio">PORTFOLIO</a>
+        <a href="#anchor-contact">CONTACT</a>
+        <a href="#" class="mention-link" data-modal-target="actus-modal">ACTUS & EXPOS</a>  
+        <a href="#anchor-mentions">MENTIONS</a> 
+        <img src="assets/images/index/user.png" alt="Icone utilisateur" id="user-mobile">
+        <a href="#" class="connect">Connexion</a>
+      </div>
+
   </nav>
   <section class="hero"  id="anchor-home">
     <div class="social">
@@ -147,7 +161,7 @@
       </div>
       <div class="grid-item" data-gallery="portrait">
         <img loading="lazy"
-             src="assets/images/entetes-galeries/portrait.jpg"
+             src="assets/images/entetes-galeries/portrait.webp"
              alt="Galerie d'images de Portraits">
       </div>
     </div>
@@ -177,7 +191,7 @@
     <span class="contact-sentinel" aria-hidden="true"></span>
 
       <div class="formulaire">
-          <div class="apropos">
+          <div class="text-contact">
             <h2>Me contacter</h2>
             <hr class="separator">
             <p>Les Casseaux</p>
@@ -206,14 +220,14 @@
           </form>
       </div>            
       <div class="photo-contact">
-          <img src="assets/images/index/contact.jpg" alt="Photo formulaire de contact: aigle volant">
+          <img src="assets/images/index/contact.webp" alt="Photo formulaire de contact: aigle volant">
       </div>
   </section>
 
   <section>
   </section>
 
-  <footer>
+  <footer id="anchor-mentions">
     <div class="back-to-top">
       <a href="#anchor-home">
         <img src="assets/images/index/up-arrow.png" alt="Home">
@@ -234,9 +248,7 @@
       <a href="#" class="mention-link" data-modal-target="terms-modal">
         Conditions d’utilisation
       </a>
-      <a href="#" class="mention-link" data-modal-target="actus-modal">
-        Actus
-      </a>
+     
     </div>
 
     
@@ -630,6 +642,7 @@
 
   <script src="assets/scripts/prevent-copy.js" defer></script>
   <script src="assets/scripts/navhide.js" defer></script>
+  <script src="assets/scripts/burger.js" defer></script>
   <script src="assets/scripts/smooth-scroll.js" defer></script>
   <script src="assets/scripts/email.js" defer></script>
   <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
