@@ -173,11 +173,7 @@
 
 @media (max-width: 600px) {
 
-  .close-btn {
-    top: -50px !important;
-    right: 10px;
-    font-size: 3rem !important;
-  }
+
 
   .hero-content h1 {
     font-size: 2rem;
@@ -220,13 +216,14 @@
   width: 100%;
 }
 
+/*Modales mentions*/
 #actus-modal .close-btn,
 #legal-modal .close-btn,
 #cookies-modal .close-btn,
 #privacy-modal .close-btn,
 #terms-modal .close-btn { 
-  top: 12px;
-  right: 18px;
+  top: 0px !important;
+  right: 10px !important;
   font-size: 3rem;
   color: #6a6a6a;
   cursor: pointer;
@@ -235,11 +232,12 @@
   line-height: 1;
   user-select: none;
 }
+
   /*Diaporama*/
   #modal .close-btn {
-    font-size: 4rem;
-    top: 0px;
-    right: 12px;
+    font-size: 3rem !important;
+    top: 0px !important;
+    right: 12px !important;
   }
 
 
@@ -309,6 +307,14 @@
   right: -30px;
 }
 
+  /*Diaporama*/
+  #modal .close-btn {
+    font-size: 3rem !important;
+    top: 0px !important;
+    right: 12px !important;
+  }
+
+
 }
 
 
@@ -337,5 +343,13 @@
 .hero-content .subtitle::after {
   right: -150px;
 }
+
+  /*Diaporama*/
+  #modal .close-btn {
+    font-size: 2.5rem !important;
+    top: 0px !important;
+    right: 12px !important;
+  }
+
 
 }
