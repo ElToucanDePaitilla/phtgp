@@ -45,7 +45,9 @@ nav {
   }
   
   .connect {
-    color: #3C7D82 !important;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #226569 !important;
+    font-weight: normal !important;
   }
   
   .navbar .connexion {

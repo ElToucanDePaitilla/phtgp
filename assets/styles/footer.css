@@ -1,6 +1,5 @@
 /* Footer */
 footer {
-  font-family: 'Exo 2', sans-serif;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -22,7 +21,7 @@ footer {
 .back-to-top a {
   display: inline-flex;
   align-items: center;
-  color: #fff;
+  color: #cfcfcf;
   text-decoration: none;
   font-family: 'Exo 2', sans-serif;
   font-size: 16px;
@@ -45,19 +44,20 @@ footer .mentions {
   gap: 1.2rem;
   flex-wrap: wrap;
 }
-footer .mentions a {
-  margin: 0 6px;
-}
 
-footer .copyright {
+.copyright {
   text-align: center;
-  margin-bottom: 20px;
 }
 
-footer p {
-  font-family: 'Exo 2', sans-serif;
-  font-size: 16px;
-  font-weight: 300;
+.copyright .nexus {
+  display: inline-block;
+  text-align: center;
+  /* garde tes animations et couleurs */
+}
+
+.copyright p {
+  font-size: 12px;
+  font-weight: 100;
   text-align: center;
   line-height: 1.2em;
   color: #c8c8c8;
@@ -71,7 +71,7 @@ footer p {
   text-decoration: none;
   cursor: pointer;
   animation: vibrate 0.3s linear infinite;
-  margin-bottom: 30px;
+  margin: 30px 0 30px 0;
 }
 .nexus:hover {
   animation: vibrate 0.3s linear infinite;
@@ -111,7 +111,7 @@ footer a:hover {
   color: #ffffff;
 }
 
-/* Conteneur du contenu de modale dans le footer (facultatif si non utilisé ici) */
+/* Conteneur du contenu de modale dans le footer (facultatif si non utilisé ici)
 .legal-content {
   background: #fff;
   max-width: 800px;
@@ -145,6 +145,8 @@ footer a:hover {
 .legal-content p:last-of-type {
   margin-bottom: 50px;
 }
+*/
+
 
 /* Réseaux sociaux du footer */
 .footer-social {
@@ -153,7 +155,7 @@ footer a:hover {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  gap: 30px;
+  gap: 20px;
 }
 .footer-social a img {
   width: 40px;

@@ -29,6 +29,7 @@
 
 .hero-content h1 {
   font-size: 4rem;
+  font-weight: 300;
   letter-spacing: 0.2em;
   margin-bottom: 10px;
   white-space: nowrap;
@@ -38,14 +39,15 @@
 .hero-content .subtitle {
   font-family: 'Exo 2', sans-serif;
   font-size: 1.2rem;
-  font-weight: 900;
+  letter-spacing: 1.5rem;
+  font-weight: bolder;
   display: inline-block;
   position: relative;
-  letter-spacing: 0.1em;
   color: #fff;
   margin-top: 20px;
-  padding: 0 20px;
+  padding: 0 10px;
 }
+
 .hero-content .subtitle::before,
 .hero-content .subtitle::after {
   content: "";
@@ -56,11 +58,11 @@
   background: #fff;
   transform: translateY(-50%);
 }
+
 .hero-content .subtitle::before {
-  left: 0;
-  transform: translate(-100%, -50%);
+  left: -70px;
 }
+
 .hero-content .subtitle::after {
-  right: 0;
-  transform: translate(100%, -50%);
+  right: -55px;
 }

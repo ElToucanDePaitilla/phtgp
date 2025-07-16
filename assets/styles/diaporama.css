@@ -83,8 +83,3 @@
   z-index: 1020;
 }
 
-/* Responsive modale pour petits écrans */
-@media (max-width: 700px) {
-  .modal-content { width: 99vw; height: 75vh; }
-  .swiper-slide img { max-width: 98vw; max-height: 72vh; }
-}

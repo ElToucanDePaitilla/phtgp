@@ -35,20 +35,10 @@
 .contact-form { margin-left: 20px; padding-right: 50px; }
 .contact-form .form-group { margin-bottom: 20px; text-align: left; }
 .contact-form label {
-  font-family: 'Exo 2', sans-serif;
-  font-weight: 600;
-  color: #333;
-  font-size: 14px;
   margin-bottom: 5px;
   display: block;
 }
-#message,
-input,
-label,
-button {
-  font-family: 'Exo 2', sans-serif;
-  font-size: 14px;
-}
+
 .contact-form input,
 .contact-form textarea {
   width: 100%;
@@ -108,8 +98,7 @@ button {
   width: 50%;
 }
 .text-contact h2 {
-  font-size: 40px;
-  padding-left: 50px;
+  padding-left: 45px;
   margin: 50px 0 50px 0;
 }
 .separator {
@@ -119,12 +108,8 @@ button {
   margin: 0 0 40px 50px;
 }
 .text-contact p {
-  font-family: 'Exo 2', sans-serif;
-  font-size: 1.1rem !important;
-  text-align: left;
-  line-height: 1.5rem !important;
-  margin-bottom: 20px;
-  padding: 0 50px;
+  color: rgb(74, 74, 74);
+  padding: 0 0 0 50px;
 }
 
 

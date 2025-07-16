@@ -2,13 +2,63 @@
 
 body, html {
     height: 100%;
-    font-family: 'Georgia', serif;
-    line-height: 28px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     background-color: #e8e8e8;
   }
   
+
   h1 {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    line-height: 28px;
     color: #fff;
     font-weight: 100;
   }
   
+  h2 {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-optical-sizing: auto;
+    font-size: 2.8rem !important;
+    font-weight: lighter;
+    font-style: normal;
+    line-height: 28px;
+    color: #000000;
+  }
+
+  p {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-optical-sizing: auto;
+    font-size: 1rem;
+    line-height: normal;
+    color: #000000;
+    font-weight: 100;
+  }
+
+  input,
+  label,
+  button,
+  textarea {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px; 
+    font-weight: light;
+    color: #333;
+  }
+
+  .separator {
+    border: none;
+    border-top: 1px solid #000;
+    width: 60px;
+    margin: 0 0 40px 50px;
+  }
+
+
+
+  .mentions a {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-optical-sizing: auto;
+    font-size: 1rem;
+    line-height: normal;
+    color: #cfcfcf;
+    font-weight: 100;
+    margin: 0 6px;
+  }

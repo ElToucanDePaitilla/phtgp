@@ -1,3 +1,15 @@
+.legal-content h2 {
+  text-align: center;
+  line-height: 4rem;
+  margin: 30px auto 70px auto;
+}
+
+.legal-content h3 {
+  margin: 40px 0 10px 0 !important;
+}
+
+
+
 #actus-modal,
 #legal-modal,
 #cookies-modal,
