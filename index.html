@@ -57,7 +57,6 @@
 
     <!-- Votre CSS global -->
     <link rel="stylesheet" href="styles.css">
-
     <!-- EmailJS SDK v4 -->
     <script
       type="text/javascript"
@@ -115,8 +114,20 @@
   <section class="section-apropos">
 
     <div class="portrait">
-        <img src="assets/images/index/portrait.webp" alt="Portait de Michel Haury">
+      <img
+      src="assets/images/index/portrait800.webp"
+      srcset="
+        assets/images/index/portrait500.webp 500w,
+        assets/images/index/portrait800.webp 800w,
+        assets/images/index/portrait1024.webp 1024w
+      "
+      sizes="100vw"
+      alt="Portrait de Michel Haury"
+      loading="lazy"
+    >
+    
     </div>
+    
     <div class="apropos">
         <h2>À propos</h2>
         <hr class="separator">
@@ -213,7 +224,7 @@
         </div>
         <form id="contact-form" class="contact-form contact-container">
             <!-- Honeypot anti-spam (invisible, avec label accessibilité) -->
-            <label for="_gotcha" class="visually-hidden" aria-hidden="true"></label>
+            <label for="_gotcha" class="visually-hidden" aria-hidden="true">Laisser ce champ vide</label>
             <input type="text" id="_gotcha" name="_gotcha" style="display:none" autocomplete="off" tabindex="-1" aria-hidden="true">
 
             <div class="form-group">
@@ -231,11 +242,27 @@
                 <textarea id="message" name="user_message" placeholder="Votre message ici" rows="5" required></textarea>
             </div>
 
-            <button type="submit" class="submit-btn" style="font-weight: bold;">Envoyer</button>
+            <button type="submit" class="submit-btn" >Envoyer</button>
         </form>
     </div>
     <div class="photo-contact">
-        <img src="assets/images/index/contact.webp" alt="Photo formulaire de contact: aigle volant">
+      <img
+      src="assets/images/index/contact800.webp"
+      srcset="
+        assets/images/index/contact500.webp 500w,
+        assets/images/index/contact800.webp 800w,
+        assets/images/index/contact1024.webp 1024w
+      "
+      sizes="
+        (max-width: 600px) 95vw,
+        (max-width: 900px) 60vw,
+        35vw
+      "
+      alt="Photo formulaire de contact: aigle volant"
+      loading="lazy"
+    >
+    
+    
     </div>
 </section>
 

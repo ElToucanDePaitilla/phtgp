@@ -1,3 +1,12 @@
+
+
+/* Ecrans < 1280px */
+@media (max-width: 1279px) {
+  .hero {
+    background-image: url('../images/index/accueil1280.webp');
+  }
+}
+
 @media (max-width: 950px) {
   .navbar > a,
   .navbar > img,
@@ -135,6 +144,12 @@
   }  
 
 }
+/* Ecrans < 800px */
+@media (max-width: 799px) {
+  .hero {
+    background-image: url('../images/index/accueil800.webp');
+  }
+}
 
 @media (max-width: 730px) {
 
@@ -254,10 +269,13 @@
     line-height: 8vh;
   } 
 
-}
 
+ 
 @media (max-width: 500px) {
-
+ .hero {
+    background-image: url('../images/index/accueil480.webp');
+  }
+}
   .hero-content h1 {
     font-size: 1.5rem !important;
     font-weight: 400;

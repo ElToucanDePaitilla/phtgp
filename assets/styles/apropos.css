@@ -32,8 +32,8 @@
   
   /* État initial : caché + 15 px plus bas */
   .apropos p {
-    color: rgb(74, 74, 74);
-    text-align: justify;
+    color: #404040;
+    text-align: left;
     line-height: 1.5rem ;
     margin-bottom: 20px;
     padding: 0 50px;

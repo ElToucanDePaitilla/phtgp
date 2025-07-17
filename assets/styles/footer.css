@@ -111,43 +111,6 @@ footer a:hover {
   color: #ffffff;
 }
 
-/* Conteneur du contenu de modale dans le footer (facultatif si non utilisé ici)
-.legal-content {
-  background: #fff;
-  max-width: 800px;
-  width: 90%;
-  margin: 60px auto;
-  padding: 20px 30px;
-  border-radius: 8px;
-  position: relative;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-  font-family: Arial, Helvetica, sans-serif;
-}
-.legal-content .close-btn {
-  position: absolute;
-  top: 12px;
-  right: 12px;
-  font-size: 1.5rem;
-  cursor: pointer;
-  color: #333;
-}
-.titre-mention {
-  font-size: 40px;
-  font-weight: bolder;
-  margin: 50px auto 70px auto;
-  text-align: center;
-}
-.legal-content h2 {
-  text-align: left;
-  margin-top: 50px;
-  margin-bottom: 30px;
-}
-.legal-content p:last-of-type {
-  margin-bottom: 50px;
-}
-*/
-
-
 /* Réseaux sociaux du footer */
 .footer-social {
   margin-top: 30px;
@@ -160,7 +123,7 @@ footer a:hover {
 .footer-social a img {
   width: 40px;
   height: 40px;
-  filter: brightness(0.7) invert(1);
+  filter: brightness(1) invert(0);
   transition: opacity 0.3s, filter 0.3s;
 }
 .footer-social a img:hover {
