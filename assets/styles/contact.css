@@ -109,9 +109,10 @@
   width: 60px;
   margin: 0 0 40px 50px;
 }
-.text-contact p {
+address {
   color: rgb(74, 74, 74);
   padding: 0 0 0 50px;
+  margin-bottom: 60px;
 }
 
 .visually-hidden {

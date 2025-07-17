@@ -1,13 +1,15 @@
+
 <!DOCTYPE html>
 <html lang="fr">
   <head>
+    <!-- Encodage, responsive, titre du site -->
     <meta charset="UTF-8" />
     <meta name="viewport"
           content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0, user-scalable=yes" />
     <title>Michel Haury | Photographe</title>
     <link rel="canonical" href="https://michelhaury.com/" />
 
-    <!-- SEO -->
+    <!-- ==================== Référencement (SEO) ==================== -->
     <meta name="description"
           content="Michel Haury, photographe passionné exerçant à Limoges, vous accompagne pour capturer tous les instants précieux de votre vie, sur des thèmes aussi variés que : les portraits, paysages, faune, flore, natures mortes, la nuit, la Creuse, la Haute-Vienne, Limoges." />
     <meta name="keywords"
@@ -16,7 +18,7 @@
     <meta name="robots" content="index, follow" />
     <meta name="theme-color" content="#222222" />
 
-    <!-- Open Graph (Facebook, LinkedIn, etc.) -->
+    <!-- ==================== Open Graph (partage réseaux sociaux) ==================== -->
     <meta property="og:title" content="Michel Haury | Photographe passionné" />
     <meta property="og:description"
           content="Découvrez le travail de Michel Haury, photographe passionné : des images authentiques, pleines d’émotion, pour immortaliser vos plus beaux moments." />
@@ -25,7 +27,7 @@
     <meta property="og:image" content="https://michelhaury.com/assets/images/socials/card-og.webp" />
     <meta property="og:locale" content="fr_FR" />
 
-    <!-- Twitter Card -->
+    <!-- ==================== Twitter Card ==================== -->
     <meta name="twitter:card" content="summary_large_image" />
     <!-- <meta name="twitter:site" content="@michelhaury" /> Balise commentée : Michel Haury n'a pas de compte Twitter -->
     <meta name="twitter:title" content="Michel Haury | Photographe passionné" />
@@ -33,58 +35,52 @@
           content="Photographe passionné et expérimenté, Michel Haury vous propose des prestations de qualité pour tous vos besoins en photo, sur des thèmes variés : portraits, paysages, faune, flore, natures mortes, la nuit, la Creuse, la Haute-Vienne, Limoges." />
     <meta name="twitter:image" content="https://michelhaury.com/assets/images/socials/card-og.webp" />
 
-    <!-- Favicons -->
+    <!-- ==================== Favicons pour tous les supports ==================== -->
     <link rel="icon" href="favicon.ico" sizes="any">
     <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicons/favicon-16x16.png">
     <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicons/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="48x48" href="assets/images/favicons/favicon-48x48.png">
     <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicons/apple-touch-icon.png">
-
-    <!-- Google Fonts (regroupées pour optimisation) -->
-    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@100&family=Roboto:wght@100&family=Open+Sans:wght@300&display=swap" rel="stylesheet">
-
+    
+    <!-- ==================== Google Fonts optimisé (preconnect, preload) ==================== -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fleur+De+Leah&display=swap" rel="stylesheet">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-
-    <!-- SwiperJS CSS et JS -->
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Exo+2:wght@100&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+      <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@100&display=swap" rel="stylesheet">
+    </noscript>
+    
+    <!-- ==================== SwiperJS (galerie/slider) ==================== -->
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
-    <!-- Votre CSS global -->
+    <!-- ==================== Feuille de style principale ==================== -->
     <link rel="stylesheet" href="styles.css">
-    <!-- EmailJS SDK v4 -->
+
+    <!-- ==================== EmailJS SDK v4 pour envoi du formulaire de contact ==================== -->
     <script
       type="text/javascript"
       src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
     </script>
   </head>
-
   
-<body>
-
-  <nav class="navbar">
-    <a href="#anchor-home">ACCUEIL</a>
-    <a href="#anchor-apropos">À PROPOS</a>
-    <a href="#anchor-portfolio">PORTFOLIO</a>
-    <a href="#anchor-contact">CONTACT</a>
-    <a href="#" class="mention-link" data-modal-target="actus-modal">ACTUS & EXPOS</a>  
-    <a href="#anchor-mentions">MENTIONS</a> 
-    <img src="assets/images/index/user.png" alt="Icone utilisateur" id="user">
-    <a href="#" class="connect">Connexion</a>
-
-    <!-- Burger menu icon -->
-    <div class="burger">
-      <span></span>
-      <span></span>
-      <span></span>
-    </div>
-
-    <!-- Menu mobile, à afficher/masquer via JS et CSS -->
+  <body>
+    <!-- ==================== Barre de navigation principale ==================== -->
+    <nav class="navbar">
+      <a href="#anchor-home">ACCUEIL</a>
+      <a href="#anchor-apropos">À PROPOS</a>
+      <a href="#anchor-portfolio">PORTFOLIO</a>
+      <a href="#anchor-contact">CONTACT</a>
+      <a href="#" class="mention-link" data-modal-target="actus-modal">ACTUS & EXPOS</a>  
+      <a href="#anchor-mentions">MENTIONS</a> 
+      <img src="assets/images/index/user.png" alt="Icone utilisateur" id="user">
+      <a href="#" class="connect">Connexion</a>
+      <!-- ===== Menu burger (mobile) ===== -->
+      <div class="burger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
       <div class="burger-menu">
         <a href="#anchor-home">ACCUEIL</a>
         <a href="#anchor-apropos">À PROPOS</a>
@@ -95,40 +91,38 @@
         <img src="assets/images/index/user.png" alt="Icone utilisateur" id="user-mobile">
         <a href="#" class="connect">Connexion</a>
       </div>
+    </nav>
 
-  </nav>
-  <section class="hero"  id="anchor-home">
-    <div class="social">
-      <a href="https://www.facebook.com/haurymichel23/" target="_blanck"><img src="assets/images/index/facebook.png" alt="Facebook"></a>
-      <a href="https://www.instagram.com/michel23430/" target="_blanck"><img src="assets/images/index/instagram.png" alt="Twitter"></a>
-    </div>
-    <div class="hero-content">
-        <h1>MICHEL HAURY</h1>
-        <!-- Voici le sous-titre avec barres -->
-        <p class="subtitle">PHOTOGRAPHE</p>
-    </div>
-      
-  </section>
+    <!-- ==================== Hero (page d'accueil) ==================== -->
+    <section class="hero"  id="anchor-home">
+      <div class="social">
+        <a href="https://www.facebook.com/haurymichel23/" target="_blanck"><img src="assets/images/index/facebook.png" alt="Facebook"></a>
+        <a href="https://www.instagram.com/michel23430/" target="_blanck"><img src="assets/images/index/instagram.png" alt="Twitter"></a>
+      </div>
+      <div class="hero-content">
+          <h1>MICHEL HAURY</h1>
+          <!-- Sous-titre avec barres stylisées -->
+          <p class="subtitle">PHOTOGRAPHE</p>
+      </div>
+    </section>
  
-  <div id="anchor-apropos" class="anchor"></div>
-  <section class="section-apropos">
-
-    <div class="portrait">
-      <img
-      src="assets/images/index/portrait800.webp"
-      srcset="
-        assets/images/index/portrait500.webp 500w,
-        assets/images/index/portrait800.webp 800w,
-        assets/images/index/portrait1024.webp 1024w
-      "
-      sizes="100vw"
-      alt="Portrait de Michel Haury"
-      loading="lazy"
-    >
-    
-    </div>
-    
-    <div class="apropos">
+    <!-- ==================== Section À propos ==================== -->
+    <div id="anchor-apropos" class="anchor"></div>
+    <section class="section-apropos">
+      <div class="portrait">
+        <img
+          src="assets/images/index/portrait800.webp"
+          srcset="
+            assets/images/index/portrait500.webp 500w,
+            assets/images/index/portrait800.webp 800w,
+            assets/images/index/portrait1024.webp 1024w
+          "
+          sizes="100vw"
+          alt="Portrait de Michel Haury"
+          loading="lazy"
+        >
+      </div>
+      <div class="apropos">
         <h2>À propos</h2>
         <hr class="separator">
         <p>Michel HAURY a découvert la photographie à l’âge de 14 ans, lorsqu’il reçut en cadeau son premier appareil photo reflex.</p>
@@ -136,580 +130,512 @@
         <p>Originaire de la région parisienne, il garde, depuis son plus jeune âge, des attaches fortes avec le département de la Creuse où il demeure maintenant pendant une grande partie de l’année. Les paysages de la Creuse et de la Haute-Vienne sont au cœur de son travail.</p>
         <p>Il s’attaque également à des sujets aussi variés que le portrait, la faune, la flore ou des créations plus artistiques.</p>
         <p>Il vous invite, à travers ses clichés, à regarder la vie et ce qui vous entoure d’une autre manière et à admirer ce que l’œil ordinaire ne perçoit pas.</p>
+      </div>
+    </section>
+    
+    <!-- ==================== Section Portfolio ==================== -->
+    <section class="portfolio" id="anchor-portfolio">
+      <div class="gallery">
+        <div class="grid-sizer"></div>
+        <div class="grid-item" data-gallery="creuse">
+          <img loading="lazy"
+               src="assets/images/entetes-galeries/creuse.webp"
+               alt="Galerie d'images de la Creuse">
+        </div>
+        <div class="grid-item" data-gallery="faune">
+          <img loading="lazy"
+               src="assets/images/entetes-galeries/faune.webp"
+               alt="Galerie d'images de la Faune">
+        </div>
+        <div class="grid-item" data-gallery="flore">
+          <img loading="lazy"
+               src="assets/images/entetes-galeries/flore.webp"
+               alt="Galerie d'images de la Flore">
+        </div>
+        <div class="grid-item" data-gallery="limoges">
+          <img loading="lazy"
+               src="assets/images/entetes-galeries/limoges.webp"
+               alt="Galerie d'images de la ville de Limoges">
+        </div>
+        <div class="grid-item" data-gallery="nature">
+          <img loading="lazy"
+               src="assets/images/entetes-galeries/nature.webp"
+               alt="Galerie d'images de la Nature">
+        </div>
+        <div class="grid-item" data-gallery="nature-morte">
+          <img loading="lazy"
+               src="assets/images/entetes-galeries/nature-morte.webp"
+               alt="Galerie d'images de Natures mortes">
+        </div>
+        <div class="grid-item"data-gallery="nuit">
+          <img loading="lazy"
+               src="assets/images/entetes-galeries/nuit.webp"
+               alt="Galerie d'images de la Nuit">
+        </div>
+        <div class="grid-item" data-gallery="paysage">
+          <img loading="lazy"
+               src="assets/images/entetes-galeries/paysage.webp"
+               alt="Galerie d'images de Paysages">
+        </div>
+        <div class="grid-item" data-gallery="portrait">
+          <img loading="lazy"
+               src="assets/images/entetes-galeries/portrait.webp"
+               alt="Galerie d'images de Portraits">
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== Modale Galerie Swiper (popup d’images) ==================== -->
+    <div id="modal">
+      <div class="modal-content">
+        <button class="close-btn" aria-label="Fermer">&times;</button>
+        <div class="swiper">
+          <div class="swiper-wrapper"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
     </div>
 
-  </section>
-  
-  <section class="portfolio" id="anchor-portfolio">
-    <div class="gallery">
-      <div class="grid-sizer"></div>
-  
-      <div class="grid-item" data-gallery="creuse">
-        <img loading="lazy"
-             src="assets/images/entetes-galeries/creuse.webp"
-             alt="Galerie d'images de la Creuse">
+    <!-- ==================== Maxime / Phrase d’accroche ==================== -->
+    <section class="maxime">
+      <div class="maxime-content maxime-subtitle">
+        <p>''De la magie du regard naissent les émotions''</p>
       </div>
-      <div class="grid-item" data-gallery="faune">
-        <img loading="lazy"
-             src="assets/images/entetes-galeries/faune.webp"
-             alt="Galerie d'images de la Faune">
-      </div>
-      <div class="grid-item" data-gallery="flore">
-        <img loading="lazy"
-             src="assets/images/entetes-galeries/flore.webp"
-             alt="Galerie d'images de la Flore">
-      </div>
-      <div class="grid-item" data-gallery="limoges">
-        <img loading="lazy"
-             src="assets/images/entetes-galeries/limoges.webp"
-             alt="Galerie d'images de la ville de Limoges">
-      </div>
-      <div class="grid-item" data-gallery="nature">
-        <img loading="lazy"
-             src="assets/images/entetes-galeries/nature.webp"
-             alt="Galerie d'images de la Nature">
-      </div>
-      <div class="grid-item" data-gallery="nature-morte">
-        <img loading="lazy"
-             src="assets/images/entetes-galeries/nature-morte.webp"
-             alt="Galerie d'images de Natures mortes">
-      </div>
-      <div class="grid-item"data-gallery="nuit">
-        <img loading="lazy"
-             src="assets/images/entetes-galeries/nuit.webp"
-             alt="Galerie d'images de la Nuit">
-      </div>
-      <div class="grid-item" data-gallery="paysage">
-        <img loading="lazy"
-             src="assets/images/entetes-galeries/paysage.webp"
-             alt="Galerie d'images de Paysages">
-      </div>
-      <div class="grid-item" data-gallery="portrait">
-        <img loading="lazy"
-             src="assets/images/entetes-galeries/portrait.webp"
-             alt="Galerie d'images de Portraits">
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- MODALE + SWIPER -->
-<div id="modal">
-  <div class="modal-content">
-    <button class="close-btn" aria-label="Fermer">&times;</button>
-    <div class="swiper">
-      <div class="swiper-wrapper"></div>
-      <div class="swiper-button-prev"></div>
-      <div class="swiper-button-next"></div>
-      <div class="swiper-pagination"></div>
-    </div>
-  </div>
-</div>
-
-  <section class="maxime">
-    <div class="maxime-content maxime-subtitle">
-      <p>''De la magie du regard naissent les émotions''</p>
-    </div>
-  </section>
-
-  <section class="section-contact" id="anchor-contact">
-    <!-- sentinelle : 1 px, totalement invisible, sert de déclencheur -->
-    <span class="contact-sentinel" aria-hidden="true"></span>
-
-    <div class="formulaire">
+    <!-- ==================== Section Contact ==================== -->
+    <section class="section-contact" id="anchor-contact">
+      <!-- Sentinelle invisible (déclenche animations si besoin) -->
+      <span class="contact-sentinel" aria-hidden="true"></span>
+      <div class="formulaire">
         <div class="text-contact">
-            <h2>Me contacter</h2>
-            <hr class="separator">
-            <p>Les Casseaux</p>
-            <p>87000 Limoges</p>
+          <h2>Me contacter</h2>
+          <hr class="separator">
+          <address>
+            Les Casseaux<br>
+            87000 Limoges
+          </address>
         </div>
         <form id="contact-form" class="contact-form contact-container">
-            <!-- Honeypot anti-spam (invisible, avec label accessibilité) -->
-            <label for="_gotcha" class="visually-hidden" aria-hidden="true">Laisser ce champ vide</label>
-            <input type="text" id="_gotcha" name="_gotcha" style="display:none" autocomplete="off" tabindex="-1" aria-hidden="true">
+          <!-- Champ honeypot anti-spam (invisible pour humains) -->
+          <label for="_gotcha" class="visually-hidden" aria-hidden="true">Laisser ce champ vide</label>
+          <input type="text" id="_gotcha" name="_gotcha" style="display:none" autocomplete="off" tabindex="-1" aria-hidden="true">
 
-            <div class="form-group">
-                <label for="name">Nom</label>
-                <input type="text" id="name" name="user_name" placeholder="Entrez votre nom" required>
-            </div>
+          <div class="form-group">
+            <label for="name">Nom</label>
+            <input type="text" id="name" name="user_name" placeholder="Entrez votre nom" required>
+          </div>
 
-            <div class="form-group">
-                <label for="email">Email</label>
-                <input type="email" id="email" name="user_email" placeholder="Entrez votre email" required>
-            </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="user_email" placeholder="Entrez votre email" required>
+          </div>
 
-            <div class="form-group">
-                <label for="message">Message</label>
-                <textarea id="message" name="user_message" placeholder="Votre message ici" rows="5" required></textarea>
-            </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="user_message" placeholder="Votre message ici" rows="5" required></textarea>
+          </div>
 
-            <button type="submit" class="submit-btn" >Envoyer</button>
+          <button type="submit" class="submit-btn" >Envoyer</button>
         </form>
-    </div>
-    <div class="photo-contact">
-      <img
-      src="assets/images/index/contact800.webp"
-      srcset="
-        assets/images/index/contact500.webp 500w,
-        assets/images/index/contact800.webp 800w,
-        assets/images/index/contact1024.webp 1024w
-      "
-      sizes="
-        (max-width: 600px) 95vw,
-        (max-width: 900px) 60vw,
-        35vw
-      "
-      alt="Photo formulaire de contact: aigle volant"
-      loading="lazy"
-    >
-    
-    
-    </div>
-</section>
-
-
-  <section>
-  </section>
-
-  <footer id="anchor-mentions">
-    <div class="back-to-top">
-      <a href="#anchor-home">
-        <img src="assets/images/index/up-arrow.png" alt="Home">
-        Haut de page
-      </a>
-    </div>
-
-    <div class="mentions">
-      <a href="#" class="mention-link" data-modal-target="legal-modal">
-        Mentions légales
-      </a>
-      <a href="#" class="mention-link" data-modal-target="cookies-modal">
-        Politique en matière de cookies
-      </a>
-      <a href="#" class="mention-link" data-modal-target="privacy-modal">
-        Politique de confidentialité
-      </a>
-      <a href="#" class="mention-link" data-modal-target="terms-modal">
-        Conditions d’utilisation
-      </a>
-     
-    </div>
-
-    
-    <div class="footer-social">
-      <a href="https://www.facebook.com/haurymichel23/" target="_blank">
-        <img src="assets/images/index/facebook.png" alt="Facebook">
-      </a>
-      <a href="https://www.instagram.com/michel23430/" target="_blank">
-        <img src="assets/images/index/instagram.png" alt="Instagram">
-      </a>
-    </div>
-    
-
-    
-    
-    <div class="copyright">
-      <p>© copyright 2025 - michelhaury.com</p>
-      <p>Made with care and love by</p>
-      <a href="https://nexus-fullstacksolutions.com" target="_blank" rel="noopener" class="nexus">
-        Nexus Full Stack Solutions
-      </a>
-    </div>
-
-
-  </footer>
-
-
-<section class="contenu-modales">
-    
- 
-  <!-- Modale Mentions légales -->
-    <div id="legal-modal">
-      <div class="legal-content">
-        <span class="close-btn" aria-label="Fermer la modale">&times;</span>
-
-        <h2>Mentions légales</h2>
-
-        <h3>1. Identification de l'éditeur</h3>
-        <p><strong>Nom commercial :</strong> Michel Haury @ Photographie</p>
-        <p><strong>Entreprise individuelle :</strong> Michel Haury</p>
-        <p><strong>Siège social :</strong> 8 avenue des Casseaux, 87000 Limoges, France</p>
-        <p><strong>SIREN :</strong> 899 880 934 – non inscrite au R.C.S</p>
-
-        <h3>2. Activité</h3>
-        <p>Activités photographiques</p>
-
-        <h3>3. Contact</h3>
-        <p><strong>Email :</strong> hello@michelhaury.com</p>
-        <p><strong>TVA :</strong> non applicable, article 293 B du CGI</p>
-        <p><strong>Directeur de la publication :</strong> Michel Haury</p>
-
-        <h3>4. Hébergement</h3>
-        <p>LWS – 10 rue Penthievre, 75008 Paris – Tél. +33 1 77 62 30 03</p>
-
-        <h3>5. Propriété intellectuelle</h3>
-        <p>
-          Le contenu de ce site (textes, images, logo, etc.) est protégé par le droit d’auteur.
-          Toute reproduction, représentation, modification, publication, adaptation de tout ou
-          partie des éléments du site est interdite sans l’autorisation écrite préalable de
-          Michel Haury @ Photographie.
-        </p>
-
-        <h3>6. Protection des données personnelles</h3>
-        <p>
-          Conformément à la loi “Informatique et Libertés” et au RGPD, vous disposez d’un droit
-          d’accès, de rectification et de suppression de vos données personnelles. Pour exercer
-          ce droit, contactez : hello@michelhaury.com.
-        </p>
-
-        <h3>7. Cookies</h3>
-        <p>Ce site peut utiliser des cookies afin d’améliorer l’expérience utilisateur.</p>
-
-        <h3>8. Responsabilité</h3>
-        <p>
-          Nexus Full Stack Solutions ne saurait être tenu responsable des erreurs rencontrées sur
-          le site, des problèmes techniques, de l’interprétation des informations publiées et des
-          conséquences de leur utilisation.
-        </p>
       </div>
-    </div>
-    <!-- Modale Politique de cookies -->
-    <div id="cookies-modal">
-      <div class="legal-content">
-        <span class="close-btn" aria-label="Fermer la modale">&times;</span>
-
-        <h2 class="titre-mention">Politique en matière de cookies</h2>
-
-        <p style="margin-bottom: 100px">
-          Cette politique en matière de cookies explique ce que sont les cookies,
-          comment nous les utilisons sur le site michelhaury.com, et quelles options
-          vous avez concernant leur gestion.
-        </p>
-
-        <h3>1. Qu’est-ce qu’un cookie&nbsp;?</h3>
-        <p>
-          Un cookie est un petit fichier texte déposé sur votre appareil
-          (ordinateur, smartphone, tablette) lors de la visite d’un site internet.
-          Il permet de conserver des informations relatives à votre navigation
-          (préférences, sessions, etc.) pour améliorer votre expérience utilisateur.
-        </p>
-
-        <h3>2. Cookies utilisés</h3>
-        <p>
-          Le site michelhaury.com utilise différents types de cookies :
-        </p>
-        <ul>
-          <li><strong>Cookies strictement nécessaires</strong> :
-            permettent le bon fonctionnement du site (navigation, accès sécurisé…)</li>
-          <li><strong>Cookies de mesure d’audience</strong> :
-            collectent des données anonymes pour analyser la fréquentation et améliorer le contenu</li>
-          <li><strong>Cookies de préférences</strong> :
-            enregistrent vos choix (langue, consentement, etc.)</li>
-        </ul>
-
-        <h3>3. Consentement</h3>
-        <p>
-          Lors de votre première visite sur le site, un bandeau vous informe de la
-          présence de cookies et vous propose d’accepter ou de refuser leur usage.
-          Vous pouvez à tout moment modifier vos préférences.
-        </p>
-
-        <h3>4. Gérer les cookies</h3>
-        <p>
-          Vous pouvez configurer votre navigateur pour bloquer tout ou partie des
-          cookies, ou pour vous alerter lorsque des cookies sont installés :
-        </p>
-        <ul>
-          <li>Chrome : <a href="https://support.google.com/chrome/answer/95647"
-                        target="_blank" rel="noopener">support.google.com</a></li>
-          <li>Firefox : <a href="https://support.mozilla.org/fr/kb/activer-desactiver-cookies"
-                          target="_blank" rel="noopener">support.mozilla.org</a></li>
-          <li>Safari : <a href="https://support.apple.com/fr-fr/guide/safari/sfri11471/mac"
-                        target="_blank" rel="noopener">support.apple.com</a></li>
-        </ul>
-
-        <h3>5. Durée de conservation</h3>
-        <p>
-          Les cookies sont conservés pour une durée maximale de 13 mois à compter
-          de leur dépôt sur votre terminal.
-        </p>
-
-        <h3>6. Mise à jour de la politique</h3>
-        <p>
-          Cette politique de cookies peut être modifiée à tout moment. Toute
-          modification sera publiée sur cette page.
-        </p>
+      <div class="photo-contact">
+        <img
+          src="assets/images/index/contact800.webp"
+          srcset="
+            assets/images/index/contact500.webp 500w,
+            assets/images/index/contact800.webp 800w,
+            assets/images/index/contact1024.webp 1024w
+          "
+          sizes="
+            (max-width: 600px) 95vw,
+            (max-width: 900px) 60vw,
+            35vw
+          "
+          alt="Photo formulaire de contact: aigle volant"
+          loading="lazy"
+        >
       </div>
-    </div>
-    <!-- Modale Politique de confidentialité -->
-    <div id="privacy-modal">
-      <div class="legal-content">
-        <span class="close-btn" aria-label="Fermer la modale">&times;</span>
+    </section>
 
-        <h2 class="titre-mention">Politique de confidentialité</h2>
+    <!-- ==================== (Section vide, peut être retirée ou utilisée plus tard) ==================== -->
+    <section>
+    </section>
 
-        <p>
-          Cette politique de confidentialité décrit comment Michel Haury @ Photographie
-          collecte, utilise et protège vos informations personnelles conformément au
-          Règlement Général sur la Protection des Données (RGPD).
-        </p>
-
-        <h3>1. Données collectées</h3>
-        <p>
-          Les données suivantes peuvent être collectées&nbsp;: nom, prénom, adresse&nbsp;email,
-          numéro de téléphone, société, fonction, adresse&nbsp;IP, informations de navigation.
-        </p>
-
-        <h3>2. Utilisation des données</h3>
-        <p>
-          Les informations recueillies sont utilisées pour&nbsp;: répondre à vos demandes,
-          améliorer notre site internet, réaliser des statistiques internes et assurer
-          la sécurité du site.
-        </p>
-
-        <h3>3. Partage des données</h3>
-        <p>
-          Les données collectées ne sont pas vendues ni louées à des tiers. Elles peuvent
-          être partagées avec des prestataires techniques dans le cadre strict de nos
-          activités (hébergement, maintenance).
-        </p>
-
-        <h3>4. Durée de conservation</h3>
-        <p>
-          Vos données personnelles sont conservées pendant la durée nécessaire aux finalités
-          pour lesquelles elles ont été collectées, sauf obligations légales contraires.
-        </p>
-
-        <h3>5. Droits de l'utilisateur</h3>
-        <p>
-          Vous disposez d'un droit d'accès, de rectification, d'opposition, de suppression
-          et de portabilité de vos données personnelles. Pour exercer vos droits,
-          contactez-nous à&nbsp;: <a href="mailto:hello@michelhaury.com">hello@michelhaury.com</a>.
-        </p>
-
-        <h3>6. Sécurité</h3>
-        <p>
-          Nous mettons en œuvre des mesures de sécurité techniques et organisationnelles
-          pour protéger vos données personnelles contre tout accès non autorisé,
-          utilisation abusive, divulgation ou destruction.
-        </p>
-
-        <h3>7. Cookies</h3>
-        <p>
-          Ce site utilise des cookies pour améliorer l'expérience utilisateur et réaliser
-          des statistiques d'audience. Vous pouvez configurer votre navigateur pour refuser
-          les cookies.
-        </p>
-
-        <h3>8. Modifications de la politique</h3>
-        <p>
-          Michel Haury @ Photographie se réserve le droit de modifier cette politique de
-          confidentialité à tout moment. Les modifications prendront effet immédiatement
-          après leur publication sur le site.
-        </p>
+    <!-- ==================== Pied de page (footer) ==================== -->
+    <footer id="anchor-mentions">
+      <div class="back-to-top">
+        <a href="#anchor-home">
+          <img src="assets/images/index/up-arrow.png" alt="Home">
+          Haut de page
+        </a>
       </div>
-    </div>
-    <!-- Modale Conditions Générales d’Utilisation -->
-    <div id="terms-modal">
-      <div class="legal-content">
-        <span class="close-btn" aria-label="Fermer la modale">&times;</span>
-
-        <h2 class="titre-mention">Conditions générales d'utilisation</h2>
-
-        <h3>1. Objet</h3>
-        <p>
-          Les présentes Conditions Générales d’Utilisation (CGU) ont pour objet de
-          définir les modalités de mise à disposition et d’utilisation des services
-          proposés par Michel Haury @ Photographie sur le site internet accessible
-          à l’adresse <a href="https://michelhaury.com" target="_blank"
-          rel="noopener">https://michelhaury.com</a>.
-        </p>
-
-        <h3>2. Acceptation des CGU</h3>
-        <p>
-          L’accès et l’utilisation du site impliquent l’acceptation pleine et
-          entière des présentes CGU. L’utilisateur reconnaît en avoir pris
-          connaissance et les accepter sans réserve.
-        </p>
-
-        <h3>3. Accès aux services</h3>
-        <p>
-          Le site permet à tout utilisateur un accès gratuit aux services suivants :
-          consultation des informations, contact via formulaire, téléchargement de
-          documents. Tous les coûts matériels, logiciels ou d’accès nécessaires
-          pour l’utilisation du site sont à la charge exclusive de l’utilisateur.
-        </p>
-
-        <h3>4. Propriété intellectuelle</h3>
-        <p>
-          Les contenus présents sur le site (textes, images, graphismes, logos,
-          icônes, vidéos, sons, logiciels) sont protégés par le droit d’auteur et la
-          propriété intellectuelle. Toute reproduction, distribution, modification
-          ou utilisation des contenus est strictement interdite sans autorisation
-          écrite préalable de Michel Haury.
-        </p>
-
-        <h3>5. Responsabilité</h3>
-        <p>
-          Michel Haury @ Photographie met tout en œuvre pour assurer l’exactitude
-          des informations publiées sur le site. Toutefois, nous ne pouvons garantir
-          l’exhaustivité, la fiabilité ou la mise à jour permanente des contenus.
-          L’utilisateur est seul responsable de l’usage des informations et
-          services proposés, et Michel Haury @ Photographie décline toute
-          responsabilité en cas de dommages directs ou indirects résultant de
-          l’utilisation du site.
-        </p>
-
-        <h3>6. Données personnelles</h3>
-        <p>
-          La collecte et le traitement des données personnelles sont décrits dans la
-          Politique de confidentialité. En utilisant le site, l’utilisateur consent
-          à ce traitement selon les termes décrits.
-        </p>
-
-        <h3>7. Liens hypertextes</h3>
-        <p>
-          Le site peut contenir des liens hypertextes vers d’autres sites édités par
-          des tiers. Michel Haury @ Photographie n’exerce aucun contrôle sur ces
-          sites et décline toute responsabilité quant à leur contenu ou leur
-          politique de confidentialité.
-        </p>
-
-        <h3>8. Modification des CGU</h3>
-        <p>
-          Michel Haury @ Photographie se réserve le droit de modifier à tout moment
-          les présentes CGU. Les nouvelles CGU s’appliqueront dès leur publication
-          en ligne. Il est conseillé à l’utilisateur de les consulter régulièrement.
-        </p>
-
-        <h3>9. Loi applicable et juridiction</h3>
-        <p>
-          Les présentes CGU sont soumises au droit français. En cas de litige,
-          compétence exclusive est attribuée aux tribunaux compétents de Limoges.
-        </p>
+      <div class="mentions">
+        <a href="#" class="mention-link" data-modal-target="legal-modal">
+          Mentions légales
+        </a>
+        <a href="#" class="mention-link" data-modal-target="cookies-modal">
+          Politique en matière de cookies
+        </a>
+        <a href="#" class="mention-link" data-modal-target="privacy-modal">
+          Politique de confidentialité
+        </a>
+        <a href="#" class="mention-link" data-modal-target="terms-modal">
+          Conditions d’utilisation
+        </a>
       </div>
-    </div> 
+      <div class="footer-social">
+        <a href="https://www.facebook.com/haurymichel23/" target="_blank">
+          <img src="assets/images/index/facebook.png" alt="Facebook">
+        </a>
+        <a href="https://www.instagram.com/michel23430/" target="_blank">
+          <img src="assets/images/index/instagram.png" alt="Instagram">
+        </a>
+      </div>
+      <div class="copyright">
+        <p>© copyright 2025 - michelhaury.com</p>
+        <p>Made with care and love by</p>
+        <a href="https://nexus-fullstacksolutions.com" target="_blank" rel="noopener" class="nexus">
+          Nexus Full Stack Solutions
+        </a>
+      </div>
+    </footer>
 
-   
-     <!-- Modale Actus -->
-     <div id="actus-modal">
-      <div class="legal-content">
-        <span class="close-btn" aria-label="Fermer la modale">&times;</span>
-
-        <main class="actus">
-          <section>
-            
-              
-            <div class="cartes-container">
-              <h2>C'est en ce moment!</h2>
-              <a href="https://www.tourisme-creuse.com/offres/exposition-de-photographies-de-michel-haury-chatelus-le-marcheix-chatelus-le-marcheix-fr-5871943/" target="_blank" rel="noopener noreferrer">
+    <!-- ==================== Modales légales et actualités ==================== -->
+    <section class="contenu-modales">
+      <!-- Modale Mentions légales -->
+      <div id="legal-modal">
+        <div class="legal-content">
+          <span class="close-btn" aria-label="Fermer la modale">&times;</span>
+          <h2>Mentions légales</h2>
+          <h3>1. Identification de l'éditeur</h3>
+          <p><strong>Nom commercial :</strong> Michel Haury @ Photographie</p>
+          <p><strong>Entreprise individuelle :</strong> Michel Haury</p>
+          <p><strong>Siège social :</strong> 8 avenue des Casseaux, 87000 Limoges, France</p>
+          <p><strong>SIREN :</strong> 899 880 934 – non inscrite au R.C.S</p>
+          <h3>2. Activité</h3>
+          <p>Activités photographiques</p>
+          <h3>3. Contact</h3>
+          <p><strong>Email :</strong> hello@michelhaury.com</p>
+          <p><strong>TVA :</strong> non applicable, article 293 B du CGI</p>
+          <p><strong>Directeur de la publication :</strong> Michel Haury</p>
+          <h3>4. Hébergement</h3>
+          <p>LWS – 10 rue Penthievre, 75008 Paris – Tél. +33 1 77 62 30 03</p>
+          <h3>5. Propriété intellectuelle</h3>
+          <p>
+            Le contenu de ce site (textes, images, logo, etc.) est protégé par le droit d’auteur.
+            Toute reproduction, représentation, modification, publication, adaptation de tout ou
+            partie des éléments du site est interdite sans l’autorisation écrite préalable de
+            Michel Haury @ Photographie.
+          </p>
+          <h3>6. Protection des données personnelles</h3>
+          <p>
+            Conformément à la loi “Informatique et Libertés” et au RGPD, vous disposez d’un droit
+            d’accès, de rectification et de suppression de vos données personnelles. Pour exercer
+            ce droit, contactez : hello@michelhaury.com.
+          </p>
+          <h3>7. Cookies</h3>
+          <p>Ce site peut utiliser des cookies afin d’améliorer l’expérience utilisateur.</p>
+          <h3>8. Responsabilité</h3>
+          <p>
+            Nexus Full Stack Solutions ne saurait être tenu responsable des erreurs rencontrées sur
+            le site, des problèmes techniques, de l’interprétation des informations publiées et des
+            conséquences de leur utilisation.
+          </p>
+        </div>
+      </div>
+      <!-- Modale Politique cookies -->
+      <div id="cookies-modal">
+        <div class="legal-content">
+          <span class="close-btn" aria-label="Fermer la modale">&times;</span>
+          <h2 class="titre-mention">Politique en matière de cookies</h2>
+          <p style="margin-bottom: 100px">
+            Cette politique en matière de cookies explique ce que sont les cookies,
+            comment nous les utilisons sur le site michelhaury.com, et quelles options
+            vous avez concernant leur gestion.
+          </p>
+          <h3>1. Qu’est-ce qu’un cookie&nbsp;?</h3>
+          <p>
+            Un cookie est un petit fichier texte déposé sur votre appareil
+            (ordinateur, smartphone, tablette) lors de la visite d’un site internet.
+            Il permet de conserver des informations relatives à votre navigation
+            (préférences, sessions, etc.) pour améliorer votre expérience utilisateur.
+          </p>
+          <h3>2. Cookies utilisés</h3>
+          <p>
+            Le site michelhaury.com utilise différents types de cookies :
+          </p>
+          <ul>
+            <li><strong>Cookies strictement nécessaires</strong> :
+              permettent le bon fonctionnement du site (navigation, accès sécurisé…)</li>
+            <li><strong>Cookies de mesure d’audience</strong> :
+              collectent des données anonymes pour analyser la fréquentation et améliorer le contenu</li>
+            <li><strong>Cookies de préférences</strong> :
+              enregistrent vos choix (langue, consentement, etc.)</li>
+          </ul>
+          <h3>3. Consentement</h3>
+          <p>
+            Lors de votre première visite sur le site, un bandeau vous informe de la
+            présence de cookies et vous propose d’accepter ou de refuser leur usage.
+            Vous pouvez à tout moment modifier vos préférences.
+          </p>
+          <h3>4. Gérer les cookies</h3>
+          <p>
+            Vous pouvez configurer votre navigateur pour bloquer tout ou partie des
+            cookies, ou pour vous alerter lorsque des cookies sont installés :
+          </p>
+          <ul>
+            <li>Chrome : <a href="https://support.google.com/chrome/answer/95647"
+                          target="_blank" rel="noopener">support.google.com</a></li>
+            <li>Firefox : <a href="https://support.mozilla.org/fr/kb/activer-desactiver-cookies"
+                            target="_blank" rel="noopener">support.mozilla.org</a></li>
+            <li>Safari : <a href="https://support.apple.com/fr-fr/guide/safari/sfri11471/mac"
+                          target="_blank" rel="noopener">support.apple.com</a></li>
+          </ul>
+          <h3>5. Durée de conservation</h3>
+          <p>
+            Les cookies sont conservés pour une durée maximale de 13 mois à compter
+            de leur dépôt sur votre terminal.
+          </p>
+          <h3>6. Mise à jour de la politique</h3>
+          <p>
+            Cette politique de cookies peut être modifiée à tout moment. Toute
+            modification sera publiée sur cette page.
+          </p>
+        </div>
+      </div>
+      <!-- Modale Politique de confidentialité -->
+      <div id="privacy-modal">
+        <div class="legal-content">
+          <span class="close-btn" aria-label="Fermer la modale">&times;</span>
+          <h2 class="titre-mention">Politique de confidentialité</h2>
+          <p>
+            Cette politique de confidentialité décrit comment Michel Haury @ Photographie
+            collecte, utilise et protège vos informations personnelles conformément au
+            Règlement Général sur la Protection des Données (RGPD).
+          </p>
+          <h3>1. Données collectées</h3>
+          <p>
+            Les données suivantes peuvent être collectées&nbsp;: nom, prénom, adresse&nbsp;email,
+            numéro de téléphone, société, fonction, adresse&nbsp;IP, informations de navigation.
+          </p>
+          <h3>2. Utilisation des données</h3>
+          <p>
+            Les informations recueillies sont utilisées pour&nbsp;: répondre à vos demandes,
+            améliorer notre site internet, réaliser des statistiques internes et assurer
+            la sécurité du site.
+          </p>
+          <h3>3. Partage des données</h3>
+          <p>
+            Les données collectées ne sont pas vendues ni louées à des tiers. Elles peuvent
+            être partagées avec des prestataires techniques dans le cadre strict de nos
+            activités (hébergement, maintenance).
+          </p>
+          <h3>4. Durée de conservation</h3>
+          <p>
+            Vos données personnelles sont conservées pendant la durée nécessaire aux finalités
+            pour lesquelles elles ont été collectées, sauf obligations légales contraires.
+          </p>
+          <h3>5. Droits de l'utilisateur</h3>
+          <p>
+            Vous disposez d'un droit d'accès, de rectification, d'opposition, de suppression
+            et de portabilité de vos données personnelles. Pour exercer vos droits,
+            contactez-nous à&nbsp;: <a href="mailto:hello@michelhaury.com">hello@michelhaury.com</a>.
+          </p>
+          <h3>6. Sécurité</h3>
+          <p>
+            Nous mettons en œuvre des mesures de sécurité techniques et organisationnelles
+            pour protéger vos données personnelles contre tout accès non autorisé,
+            utilisation abusive, divulgation ou destruction.
+          </p>
+          <h3>7. Cookies</h3>
+          <p>
+            Ce site utilise des cookies pour améliorer l'expérience utilisateur et réaliser
+            des statistiques d'audience. Vous pouvez configurer votre navigateur pour refuser
+            les cookies.
+          </p>
+          <h3>8. Modifications de la politique</h3>
+          <p>
+            Michel Haury @ Photographie se réserve le droit de modifier cette politique de
+            confidentialité à tout moment. Les modifications prendront effet immédiatement
+            après leur publication sur le site.
+          </p>
+        </div>
+      </div>
+      <!-- Modale Conditions Générales d’Utilisation -->
+      <div id="terms-modal">
+        <div class="legal-content">
+          <span class="close-btn" aria-label="Fermer la modale">&times;</span>
+          <h2 class="titre-mention">Conditions générales d'utilisation</h2>
+          <h3>1. Objet</h3>
+          <p>
+            Les présentes Conditions Générales d’Utilisation (CGU) ont pour objet de
+            définir les modalités de mise à disposition et d’utilisation des services
+            proposés par Michel Haury @ Photographie sur le site internet accessible
+            à l’adresse <a href="https://michelhaury.com" target="_blank"
+            rel="noopener">https://michelhaury.com</a>.
+          </p>
+          <h3>2. Acceptation des CGU</h3>
+          <p>
+            L’accès et l’utilisation du site impliquent l’acceptation pleine et
+            entière des présentes CGU. L’utilisateur reconnaît en avoir pris
+            connaissance et les accepter sans réserve.
+          </p>
+          <h3>3. Accès aux services</h3>
+          <p>
+            Le site permet à tout utilisateur un accès gratuit aux services suivants :
+            consultation des informations, contact via formulaire, téléchargement de
+            documents. Tous les coûts matériels, logiciels ou d’accès nécessaires
+            pour l’utilisation du site sont à la charge exclusive de l’utilisateur.
+          </p>
+          <h3>4. Propriété intellectuelle</h3>
+          <p>
+            Les contenus présents sur le site (textes, images, graphismes, logos,
+            icônes, vidéos, sons, logiciels) sont protégés par le droit d’auteur et la
+            propriété intellectuelle. Toute reproduction, distribution, modification
+            ou utilisation des contenus est strictement interdite sans autorisation
+            écrite préalable de Michel Haury.
+          </p>
+          <h3>5. Responsabilité</h3>
+          <p>
+            Michel Haury @ Photographie met tout en œuvre pour assurer l’exactitude
+            des informations publiées sur le site. Toutefois, nous ne pouvons garantir
+            l’exhaustivité, la fiabilité ou la mise à jour permanente des contenus.
+            L’utilisateur est seul responsable de l’usage des informations et
+            services proposés, et Michel Haury @ Photographie décline toute
+            responsabilité en cas de dommages directs ou indirects résultant de
+            l’utilisation du site.
+          </p>
+          <h3>6. Données personnelles</h3>
+          <p>
+            La collecte et le traitement des données personnelles sont décrits dans la
+            Politique de confidentialité. En utilisant le site, l’utilisateur consent
+            à ce traitement selon les termes décrits.
+          </p>
+          <h3>7. Liens hypertextes</h3>
+          <p>
+            Le site peut contenir des liens hypertextes vers d’autres sites édités par
+            des tiers. Michel Haury @ Photographie n’exerce aucun contrôle sur ces
+            sites et décline toute responsabilité quant à leur contenu ou leur
+            politique de confidentialité.
+          </p>
+          <h3>8. Modification des CGU</h3>
+          <p>
+            Michel Haury @ Photographie se réserve le droit de modifier à tout moment
+            les présentes CGU. Les nouvelles CGU s’appliqueront dès leur publication
+            en ligne. Il est conseillé à l’utilisateur de les consulter régulièrement.
+          </p>
+          <h3>9. Loi applicable et juridiction</h3>
+          <p>
+            Les présentes CGU sont soumises au droit français. En cas de litige,
+            compétence exclusive est attribuée aux tribunaux compétents de Limoges.
+          </p>
+        </div>
+      </div>
+      <!-- Modale Actus & Expositions -->
+      <div id="actus-modal">
+        <div class="legal-content">
+          <span class="close-btn" aria-label="Fermer la modale">&times;</span>
+          <main class="actus">
+            <section>
+              <div class="cartes-container">
+                <h2>C'est en ce moment!</h2>
+                <a href="https://www.tourisme-creuse.com/offres/exposition-de-photographies-de-michel-haury-chatelus-le-marcheix-chatelus-le-marcheix-fr-5871943/" target="_blank" rel="noopener noreferrer">
+                  <img
+                     class="carte" 
+                     src="assets/images/actus/Expo2025aout-08-16.webp" 
+                     alt="Randonnée photographique dans la Creuse, Bibliothèque de Châtelus-le-Maracheix."
+                     />
+                  </a> 
+                <a href="https://bibliothequedechateluslemarcheix.blogspot.com/search?q=haury" target="_blank" rel="noopener noreferrer">
                 <img
                    class="carte" 
-                   src="assets/images/actus/Expo2025aout-08-16.webp" 
-                   alt="Randonnée photographique dans la Creuse, Bibliothèque de Châtelus-le-Maracheix."
+                   src="assets/images/actus/Michel_Haury_Photographe-randonnée_photographique_Châtelus-le-Marcheix.webp" 
+                   alt="Affiche Michel Haury Photographe - randonnée photographique dans la Creuse, Association des lecteurs de Châtelus-le-Marcheix, Bibliothèque de Châtelus-le-Maracheix, 23430 Châtelus-le-Marcheix"
                    />
-                </a> 
-              <a href="https://bibliothequedechateluslemarcheix.blogspot.com/search?q=haury" target="_blank" rel="noopener noreferrer">
-              <img
-                 class="carte" 
-                 src="assets/images/actus/Michel_Haury_Photographe-randonnée_photographique_Châtelus-le-Marcheix.webp" 
-                 alt="Affiche Michel Haury Photographe - randonnée photographique dans la Creuse, Association des lecteurs de Châtelus-le-Marcheix, Bibliothèque de Châtelus-le-Maracheix, 23430 Châtelus-le-Marcheix"
-                 />
-              </a>
-              <h2>Vous les avez manquées?</h2>
-              <a href="https://www.facebook.com/photo/?fbid=1671548516742341&set=a.100975827132959" target="_blank" rel="noopener noreferrer">
-                <img
-                  class="carte"
-                  src="assets/images/actus/remiseprix2024dec.webp"
-                  alt="Affiche Michel Haury Photographe - Remise des prix du concours photos 2024 à Châtelus-le-Marcheix"
-                />
-              </a>
-  
-              <a href="https://www.facebook.com/photo/?fbid=1671548516742341&set=a.100975827132959" target="_blank" rel="noopener noreferrer">
-                <img
-                  class="carte"
-                  src="assets/images/actus/concoursphotos2024juin.webp"
-                  alt="Affiche Michel Haury Photographe - Concours photos 2024 à Châtelus-le-Marcheix 'La pierre dans tous ses états"
-                />
-              </a>
-  
-              <a href="https://www.facebook.com/photo/?fbid=1678219402741919&set=a.100975827132959" target="_blank" rel="noopener noreferrer">
-                <img
-                  class="carte"
-                  src="assets/images/actus/expo2024nov.webp"
-                  alt="Affiche Michel Haury Photographe - exposition nov 2024 à Châtelus-le-Marcheix 'Exposition Photographique'"
-                />
-              </a>
-              
-              <a href="https://bibliothequedechateluslemarcheix.blogspot.com/search?q=haury" target="_blank" rel="noopener noreferrer">
-                <img
-                  class="carte"
-                  src="assets/images/actus/expo2024juillet.webp"
-                  alt="Affiche Michel Haury Photographe - exposition juillet 2024 à Châtelus-le-Marcheix 'Les vitraux de l'Eglise et le Thaurion'"
-                />
-              </a>
-           
-              <a href="https://bibliothequedechateluslemarcheix.blogspot.com/search?q=haury" target="_blank" rel="noopener noreferrer">
-                <img
-                  class="carte"
-                  src="assets/images/actus/rando-photo2023.webp"
-                  alt="Affiche Michel Haury Photographe - randonnée photo 2023 à Châtelus-le-Marcheix 'Les vitraux de l'Eglise et le Thaurion'"
-                />
-              </a>
-  
-              <a href="https://bibliothequedechateluslemarcheix.blogspot.com/search?q=haury" target="_blank" rel="noopener noreferrer">
-                <img
-                  class="carte"
-                  src="assets/images/actus/expo2018aout.webp"
-                  alt="Affiche Michel Haury Photographe - exposition août 2018 'Tempête de neige sur un été Creusois'"
-                />
-              </a>
-  
-              <a href="https://www.laquincaillerie.tl/michel-haury-regards/" target="_blank" rel="noopener noreferrer">
-                <img
-                  class="carte"
-                  src="assets/images/actus/expo2018mars.webp"
-                  alt="Affiche Michel Haury Photographe - exposition 2018 'Regards'"
-                />
-              </a>
-  
-              <a href="https://bibliothequedechateluslemarcheix.blogspot.com/search?q=haury" target="_blank" rel="noopener noreferrer">
-                <img
-                  class="carte"
-                  src="assets/images/actus/expo2017fevrier.webp"
-                  alt="Affiche Michel Haury Photographe - exposition 2017 'Regards'"
-                />
-              </a>
-  
-           </div>
-          </section>
-        </main>
-        
-      </div>
-    </div> 
-   
-</section>
+                </a>
+                <h2>Vous les avez manquées?</h2>
+                <a href="https://www.facebook.com/photo/?fbid=1671548516742341&set=a.100975827132959" target="_blank" rel="noopener noreferrer">
+                  <img
+                    class="carte"
+                    src="assets/images/actus/remiseprix2024dec.webp"
+                    alt="Affiche Michel Haury Photographe - Remise des prix du concours photos 2024 à Châtelus-le-Marcheix"
+                  />
+                </a>
+                <a href="https://www.facebook.com/photo/?fbid=1671548516742341&set=a.100975827132959" target="_blank" rel="noopener noreferrer">
+                  <img
+                    class="carte"
+                    src="assets/images/actus/concoursphotos2024juin.webp"
+                    alt="Affiche Michel Haury Photographe - Concours photos 2024 à Châtelus-le-Marcheix 'La pierre dans tous ses états"
+                  />
+                </a>
+                <a href="https://www.facebook.com/photo/?fbid=1678219402741919&set=a.100975827132959" target="_blank" rel="noopener noreferrer">
+                  <img
+                    class="carte"
+                    src="assets/images/actus/expo2024nov.webp"
+                    alt="Affiche Michel Haury Photographe - exposition nov 2024 à Châtelus-le-Marcheix 'Exposition Photographique'"
+                  />
+                </a>
+                <a href="https://bibliothequedechateluslemarcheix.blogspot.com/search?q=haury" target="_blank" rel="noopener noreferrer">
+                  <img
+                    class="carte"
+                    src="assets/images/actus/expo2024juillet.webp"
+                    alt="Affiche Michel Haury Photographe - exposition juillet 2024 à Châtelus-le-Marcheix 'Les vitraux de l'Eglise et le Thaurion'"
+                  />
+                </a>
+                <a href="https://bibliothequedechateluslemarcheix.blogspot.com/search?q=haury" target="_blank" rel="noopener noreferrer">
+                  <img
+                    class="carte"
+                    src="assets/images/actus/rando-photo2023.webp"
+                    alt="Affiche Michel Haury Photographe - randonnée photo 2023 à Châtelus-le-Marcheix 'Les vitraux de l'Eglise et le Thaurion'"
+                  />
+                </a>
+                <a href="https://bibliothequedechateluslemarcheix.blogspot.com/search?q=haury" target="_blank" rel="noopener noreferrer">
+                  <img
+                    class="carte"
+                    src="assets/images/actus/expo2018aout.webp"
+                    alt="Affiche Michel Haury Photographe - exposition août 2018 'Tempête de neige sur un été Creusois'"
+                  />
+                </a>
+                <a href="https://www.laquincaillerie.tl/michel-haury-regards/" target="_blank" rel="noopener noreferrer">
+                  <img
+                    class="carte"
+                    src="assets/images/actus/expo2018mars.webp"
+                    alt="Affiche Michel Haury Photographe - exposition 2018 'Regards'"
+                  />
+                </a>
+                <a href="https://bibliothequedechateluslemarcheix.blogspot.com/search?q=haury" target="_blank" rel="noopener noreferrer">
+                  <img
+                    class="carte"
+                    src="assets/images/actus/expo2017fevrier.webp"
+                    alt="Affiche Michel Haury Photographe - exposition 2017 'Regards'"
+                  />
+                </a>
+              </div>
+            </section>
+          </main>
+        </div>
+      </div> 
+    </section>
 
-
-
-
-  <script src="assets/scripts/prevent-copy.js" defer></script>
-  <script src="assets/scripts/navhide.js" defer></script>
-  <script src="assets/scripts/burger.js" defer></script>
-  <script src="assets/scripts/smooth-scroll.js" defer></script>
-  <script src="assets/scripts/email.js" defer></script>
-  <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
-  <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
-  <script src="assets/scripts/masonry.js" defer></script>
-  <script src="assets/scripts/reveal.js" defer></script>
-  <script src="assets/scripts/apropos-reveal.js" defer></script>
-  <script src="assets/scripts/maxime-reveal.js" defer></script>
-  <script src="assets/scripts/parallax.js" defer></script>
-  <script src="assets/scripts/modal-mentions.js" defer></script>
-  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-  
-  <script src="assets/scripts/gallery.js" defer></script>
- 
-
-
-</body>
+    <!-- ==================== Scripts JS ==================== -->
+    <script src="assets/scripts/prevent-copy.js" defer></script>
+    <script src="assets/scripts/navhide.js" defer></script>
+    <script src="assets/scripts/burger.js" defer></script>
+    <script src="assets/scripts/smooth-scroll.js" defer></script>
+    <script src="assets/scripts/email.js" defer></script>
+    <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+    <script src="assets/scripts/masonry.js" defer></script>
+    <script src="assets/scripts/reveal.js" defer></script>
+    <script src="assets/scripts/apropos-reveal.js" defer></script>
+    <script src="assets/scripts/maxime-reveal.js" defer></script>
+    <script src="assets/scripts/parallax.js" defer></script>
+    <script src="assets/scripts/modal-mentions.js" defer></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/scripts/gallery.js" defer></script>
+  </body>
 </html>
+

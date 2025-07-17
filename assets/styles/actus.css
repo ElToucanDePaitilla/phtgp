@@ -66,17 +66,5 @@
     line-height: 1.5;
 }
 
-@media screen and (max-width: 700px) {
-    .actus h2 {
-      margin-top: 50px;
-      margin-bottom: 30px;
-     
-      /* ou de façon raccourcie : margin: 50px 0; */
-    }
 
-    .carte {
-        margin: 10px auto 30px auto;        /* centré et espacé verticalement */
-        
-    }
-  }
   

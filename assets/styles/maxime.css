@@ -1,6 +1,6 @@
 /* ────────── Maxime : section plein écran avec image fixe ────────── */
 .maxime {
-    background: url('../images/index/maxime.webp') center/cover no-repeat;
+    background: url('../images/index/maxime1920.webp') center/cover no-repeat;
     background-attachment: fixed;
     height: 100vh;
     display: flex;

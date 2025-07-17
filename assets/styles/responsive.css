@@ -1,13 +1,30 @@
+/* ================================================
+   Responsive CSS pour Michel Haury Photographe
+   ================================================
+   Chaque section adapte le site pour une taille d'écran différente.
+   Les commentaires expliquent chaque groupe de règles ou chaque effet visuel.
+   ================================================ */
 
 
-/* Ecrans < 1280px */
+/* ======= Écrans < 1280px : background accueil adapté ======= */
 @media (max-width: 1279px) {
   .hero {
     background-image: url('../images/index/accueil1280.webp');
   }
 }
 
-@media (max-width: 950px) {
+/* ======= Écrans < 1200px : background maxime adapté ======= */
+@media (max-width: 1199px) {
+  .maxime {
+    background-image: url('../images/index/maxime1024.webp');
+  }
+}
+
+/* ===========================================================
+   < 920px : Layout mobile/tablette, menu burger, colonne, etc.
+   =========================================================== */
+@media (max-width: 920px) {
+  /* NavBar : masque les liens principaux, affiche le burger */
   .navbar > a,
   .navbar > img,
   .navbar > .connect {
@@ -22,14 +39,6 @@
   .burger-menu.active {
     display: flex;
   }
-}
-
-@media (max-width: 920px) {
-
-  .burger {
-    display: flex;
-  }
-
   #user {
     display: none;
   }
@@ -38,12 +47,12 @@
     flex-direction: column;
     align-items: center;
   }
- 
   .portrait, .apropos { width: 100%; }
   .apropos p {
     font-size: 20px;
     line-height: 28px;
   }
+  /* Cache les icônes réseaux sociaux */
   .social {
     display: none;
   }
@@ -51,36 +60,25 @@
     width: 60px;
     height: 60px;
   }
-
-  .burger { display: flex; }
-  .hero { height: 100vh; }
-  
-  .apropos p {
-    font-size: 20px;
-    line-height: 28px;
-  }
-
-
+  /* Footer en colonne */
   footer .mentions {
     flex-direction: column;
     align-items: center;
-    }
-
+  }
+  /* Section Contact en colonne, formulaire large */
   .section-contact {
     flex-direction: column;
     align-items: center;
     margin: 0 0 50px 0;
     padding: 0;
   }
-
   .section-contact .formulaire {
     width: 90%;
   }
-
   .section-contact .photo-contact {
     width: 100%;
   }
-  /* Texte contact */
+  /* Zone texte du contact */
   .text-contact {
     width: 100%;
   }
@@ -96,248 +94,255 @@
     margin: 0 0 40px 50px;
   }
   .text-contact p {
-    font-family: 'Exo 2', sans-serif;
     font-size: 1.1rem !important;
+    color: red;
     text-align: left;
     line-height: 1.5rem !important;
     margin-bottom: 20px;
     padding: 0 50px;
   }
-
   .formulaire {
     align-items: center !important;
   }
-
   .contact-container {
     padding: 0 0 50px 0;
   }
-
   .contact-form {
     margin-left: 0;
     margin-right: 0;
     padding-right: 0;
   }
-
-  /* Réseaux sociaux du footer */
+  /* Réseaux sociaux du footer plus grands et espacés */
   .footer-social {
     margin-top: 30px;
     margin-bottom: 30px;
     gap: 30px;
   }
-
   .footer-social a img {
     width: 60px;
     height: 60px;
   }
-
+  /* Accroche (maxime) repositionnée */
   .maxime-content {
     bottom: 15%;
     left: 0;
     margin: 0 50px 0 50px;
   }
-
   .maxime-subtitle p {
     font-size: 5rem;
     letter-spacing: 0.1em;
     color: #ffffff;
     line-height: 8vh;
-  }  
-
+  }
 }
-/* Ecrans < 800px */
+
+/* ======= Écrans < 900px : background maxime différent ======= */
+@media (max-width: 899px) {
+  .maxime {
+    background-image: url('../images/index/maxime900.webp');
+  }
+}
+
+/* ======= Écrans < 800px : background accueil adapté ======= */
 @media (max-width: 799px) {
   .hero {
     background-image: url('../images/index/accueil800.webp');
   }
 }
 
+/* ===========================================================
+   < 730px : titres plus petits, marges réduites (hero, maxime)
+   =========================================================== */
 @media (max-width: 730px) {
-
   .hero-content h1 {
     font-size: 3rem;
     letter-spacing: 0.3em;
     margin-bottom: 10px;
     line-height: 40px;
+  }
+  .hero-content .subtitle {
+    font-size: 1.2rem;
+    letter-spacing: 1rem !important;
+    padding: 0 20px;
+  }
+  .maxime-content {
+    bottom: 15%;
+    left: 0;
+    margin: 0 30px 0 30px;
+  }
+  .maxime-subtitle p {
+    font-size: 4rem;
+    letter-spacing: 0.1em;
+    color: #ffffff;
+    line-height: 8vh;
+  }
 }
 
-.hero-content .subtitle {
-  font-size: 1.2rem;
-  letter-spacing: 1rem !important;
-  padding: 0 20px;
-}
-
-.maxime-content {
-  bottom: 15%;
-  left: 0;
-  margin: 0 30px 0 30px;
- }
-
- .maxime-subtitle p {
-  font-size: 4rem;
-  letter-spacing: 0.1em;
-  color: #ffffff;
-  line-height: 8vh;
-}  
-}
-
-/* Responsive modale pour petits écrans */
+/* ===========================================================
+   < 700px : modale Swiper et images + larges, cartes actus
+   =========================================================== */
 @media (max-width: 700px) {
   .modal-content { width: 99vw; height: 75vh; }
   .swiper-slide img { max-width: 98vw; max-height: 72vh; }
+  .actus h2 {
+    margin-top: 50px;
+    margin-bottom: 30px;
+    /* margin: 50px 0; possible aussi */
+  }
+  .carte {
+    margin: 10px auto 30px auto; /* cartes centrées et espacées */
+  }
 }
 
+/* ===========================================================
+   < 600px : backgrounds light, typo réduite, modales plein écran
+   =========================================================== */
 @media (max-width: 600px) {
-
-
-
+  .maxime {
+    background-image: url('../images/index/maxime500.webp');
+  }
   .hero-content h1 {
-    font-size: 2rem;
+    font-size: 2rem !important;
     font-weight: 400;
     letter-spacing: 0.4em;
     margin-bottom: 10px;
     line-height: 40px;
-}
-.hero-content .subtitle {
-  font-family: 'Exo 2', sans-serif;
-  font-size: 1.2rem;
-  letter-spacing: 0.8rem !important;
-}
-.maxime-content {
-  bottom: 15%;
-  left: 0;
-  margin: 0 20px 0 20px;
- }
-
- .maxime-subtitle p {
-  font-size: 4rem;
-  letter-spacing: 0.1em;
-  color: #ffffff;
-  line-height: 8vh;
-}   
-
-#actus-modal,
-#legal-modal,
-#cookies-modal,
-#privacy-modal,
-#terms-modal {
-  top: 0; left: 0; width: 100vw; height: 100vh;
-}
-
-#actus-modal .legal-content,
-#legal-modal .legal-content,
-#cookies-modal .legal-content,
-#privacy-modal .legal-content,
-#terms-modal .legal-content {
-  width: 100%;
-}
-
-/*Modales mentions*/
-#actus-modal .close-btn,
-#legal-modal .close-btn,
-#cookies-modal .close-btn,
-#privacy-modal .close-btn,
-#terms-modal .close-btn { 
-  top: 0px !important;
-  right: 10px !important;
-  font-size: 3rem;
-  color: #6a6a6a;
-  cursor: pointer;
-  background: none;
-  border: none;
-  line-height: 1;
-  user-select: none;
-}
-
-  /*Diaporama*/
+  }
+  .hero-content .subtitle {
+    font-family: 'Exo 2', sans-serif;
+    font-size: 1.2rem;
+    letter-spacing: 0.8rem !important;
+  }
+  .maxime-content {
+    bottom: 15%;
+    left: 0;
+    margin: 0 20px 0 20px;
+  }
+  .maxime-subtitle p {
+    font-size: 4rem;
+    letter-spacing: 0.1em;
+    color: #ffffff;
+    line-height: 8vh;
+  }
+  /* Modales plein écran */
+  #actus-modal,
+  #legal-modal,
+  #cookies-modal,
+  #privacy-modal,
+  #terms-modal {
+    top: 0; left: 0; width: 100vw; height: 100vh;
+  }
+  #actus-modal .legal-content,
+  #legal-modal .legal-content,
+  #cookies-modal .legal-content,
+  #privacy-modal .legal-content,
+  #terms-modal .legal-content {
+    width: 100%;
+  }
+  /* Boutons de fermeture modale, bien visibles sur mobile */
+  #actus-modal .close-btn,
+  #legal-modal .close-btn,
+  #cookies-modal .close-btn,
+  #privacy-modal .close-btn,
+  #terms-modal .close-btn {
+    top: 0px !important;
+    right: 10px !important;
+    font-size: 3rem;
+    color: #6a6a6a;
+    cursor: pointer;
+    background: none;
+    border: none;
+    line-height: 1;
+    user-select: none;
+  }
+  /* Diaporama Swiper, bouton fermeture */
   #modal .close-btn {
     font-size: 3rem !important;
     top: 0px !important;
     right: 12px !important;
   }
-
-
   .maxime-content {
     bottom: 15%;
     left: 0;
     margin: 0 20px 0 20px;
-   }
-  
-   .maxime-subtitle p {
+  }
+  .maxime-subtitle p {
     font-size: 4rem;
     letter-spacing: 0.1em;
     color: #ffffff;
     line-height: 8vh;
-  } 
-
-
- 
-@media (max-width: 500px) {
- .hero {
-    background-image: url('../images/index/accueil480.webp');
   }
 }
+
+/* ===========================================================
+   < 500px : background accueil mobile, typographie compacte, 1 colonne
+   =========================================================== */
+@media (max-width: 500px) {
+  .hero {
+    background-image: url('../images/index/accueil480.webp');
+  }
   .hero-content h1 {
     font-size: 1.5rem !important;
     font-weight: 400;
     letter-spacing: 0.4em;
     margin-bottom: 10px;
     line-height: 40px !important;
+  }
+  /* Sous-titre : police réduite et espacée */
+  .hero-content .subtitle {
+    font-family: 'Exo 2', sans-serif;
+    font-size: 1rem;
+    letter-spacing: 0.5rem !important;
+  }
+  .maxime-content {
+    bottom: 15%;
+    left: 0;
+    margin: 0 20px 0 20px;
+  }
+  .maxime-subtitle p {
+    font-size: 3rem;
+    letter-spacing: 0.1em;
+    color: #ffffff;
+    line-height: 7vh;
+  }
+  /* Barres décoratives autour du sous-titre */
+  .hero-content .subtitle::before,
+  .hero-content .subtitle::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 40px;
+    height: 1px;
+    background: #fff;
+    transform: translateY(-50%);
+  }
+  .hero-content .subtitle::before {
+    left: -40px;
+  }
+  .hero-content .subtitle::after {
+    right: -30px;
+  }
 }
 
-/* Sous-titre */
-
-
-.hero-content .subtitle {
-  font-family: 'Exo 2', sans-serif;
-  font-size: 1rem;
-  letter-spacing: 0.5rem !important;
-}
-
-.maxime-content {
-  bottom: 15%;
-  left: 0;
-  margin: 0 20px 0 20px;
- }
-
- .maxime-subtitle p {
-  font-size: 3rem;
-  letter-spacing: 0.1em;
-  color: #ffffff;
-  line-height: 7vh;
-} 
-
-.hero-content .subtitle::before,
-.hero-content .subtitle::after {
-  content: "";
-  position: absolute;
-  top: 50%;
-  width: 40px;
-  height: 1px;
-  background: #fff;
-  transform: translateY(-50%);
-}
-
-.hero-content .subtitle::before {
-  left: -40px;
-}
-
-.hero-content .subtitle::after {
-  right: -30px;
-}
-
-  /*Diaporama*/
+/* ===========================================================
+   < 500px : portfolio en une colonne, bouton diaporama adapté
+   =========================================================== */
+@media (max-width: 500px) {
+  .grid-sizer,
+  .grid-item {
+    width: 100%; /* Portfolio : pleine largeur en 1 colonne */
+  }
   #modal .close-btn {
     font-size: 3rem !important;
     top: 0px !important;
     right: 12px !important;
   }
-
-
 }
 
-
+/* ===========================================================
+   < 350px : titres et sous-titres ultra-compacts, barres longues
+   =========================================================== */
 @media (max-width: 350px) {
-
   .hero-content h1 {
     font-size: 2rem;
     letter-spacing: 0.3em;
@@ -345,29 +350,21 @@
     line-height: 80px;
     white-space: wrap;
   }
-
-/* Sous-titre */
-
-.hero-content .subtitle {
-  font-family: 'Exo 2', sans-serif;
-  font-size: 1rem;
-  letter-spacing: 1rem !important;
-}
-
-.hero-content .subtitle::before {
-  left: -150px;
-}
-
-.hero-content .subtitle::after {
-  right: -150px;
-}
-
-  /*Diaporama*/
+  /* Sous-titre très étroit et barres très longues */
+  .hero-content .subtitle {
+    font-family: 'Exo 2', sans-serif;
+    font-size: 1rem;
+    letter-spacing: 1rem !important;
+  }
+  .hero-content .subtitle::before {
+    left: -150px;
+  }
+  .hero-content .subtitle::after {
+    right: -150px;
+  }
   #modal .close-btn {
     font-size: 2.5rem !important;
     top: 0px !important;
     right: 12px !important;
   }
-
-
 }
