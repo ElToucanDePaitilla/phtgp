@@ -43,13 +43,28 @@
     <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicons/apple-touch-icon.png">
     
     <!-- ==================== Google Fonts optimisé (preconnect, preload) ==================== -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Exo+2:wght@100&display=swap" onload="this.onload=null;this.rel='stylesheet'">
-    <noscript>
-      <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@100&display=swap" rel="stylesheet">
-    </noscript>
-    
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<!-- Preload la font principale (Exo 2) -->
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Exo+2:wght@100&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+
+<!-- Chargement des polices "Dancing Script" et "Fleur De Leah" -->
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Fleur+De+Leah&display=swap" rel="stylesheet">
+
+<noscript>
+  <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@100&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Fleur+De+Leah&display=swap" rel="stylesheet">
+</noscript>
+
+
+
+
+
+
+
+
+
     <!-- ==================== SwiperJS (galerie/slider) ==================== -->
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>

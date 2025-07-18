@@ -13,8 +13,7 @@
   }
 
   .maxime-subtitle p {
-    font-family: "Fleur De Leah", cursive;
-    font-style: italic;
+    font-family:'Dancing Script', 'Fleur De Leah', cursive;
     font-size: 5rem;
     letter-spacing: 0.1em;
     color: #fff;
@@ -51,5 +50,10 @@
     transform: translateY(0);
   }
   
-
+/*
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-weight: <weight>;Use a value from 400 to 700
+  font-style: normal;
+*/
   

@@ -5,12 +5,10 @@
   justify-content: center;
   align-items: stretch;
   margin-bottom: 100px;
-  padding-left: 120px;
   background-color: #fff;
 }
 
 /* Colonnes */
-.contact-box,
 .contact-photo {
   width: 50%;
 }
@@ -20,9 +18,10 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start !important;
+  width: 50%;
+  padding-left: 120px;
 }
 
-/* Champs, labels, bouton */
 .contact-form {
   text-align: center;
   background-color: #fff;  
@@ -33,6 +32,8 @@
   padding-right: 50px; 
 }
 
+
+/* Champs, labels, bouton */
 .contact-form .form-group { margin-bottom: 20px; text-align: left; }
 .contact-form label {
   margin-bottom: 5px;
@@ -78,23 +79,6 @@
   display: block;
 }
 
-
-/* ───────────────────── Effet « slide-up » sur .apropos p ───────────────────── */
-
-/* Animation clé */
-@keyframes aproposFade {
-  to { opacity: 1; transform: translateY(0); }
-}
-
-
-/* Décalage progressif (stagger) */
-.apropos.reveal p:nth-of-type(1) { animation-delay: 0.1s; }
-.apropos.reveal p:nth-of-type(2) { animation-delay: 0.2s; }
-.apropos.reveal p:nth-of-type(3) { animation-delay: 0.3s; }
-.apropos.reveal p:nth-of-type(4) { animation-delay: 0.4s; }
-.apropos.reveal p:nth-of-type(5) { animation-delay: 0.5s; }
-.apropos.reveal p:nth-of-type(6) { animation-delay: 0.6s; }
-
 /* Texte contact */
 
 .text-contact h2 {
@@ -124,5 +108,6 @@ address {
   white-space: nowrap !important;
   border: 0 !important;
 }
+
 
 

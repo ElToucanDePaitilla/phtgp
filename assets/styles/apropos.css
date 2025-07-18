@@ -45,3 +45,19 @@
   .apropos.reveal p {
     animation: aproposFade 0.6s ease-out forwards;
   }
+
+/* ───────────────────── Effet « slide-up » sur .apropos p ───────────────────── */
+
+/* Animation clé */
+@keyframes aproposFade {
+  to { opacity: 1; transform: translateY(0); }
+}
+
+  
+/* Décalage progressif (stagger) */
+.apropos.reveal p:nth-of-type(1) { animation-delay: 0.1s; }
+.apropos.reveal p:nth-of-type(2) { animation-delay: 0.2s; }
+.apropos.reveal p:nth-of-type(3) { animation-delay: 0.3s; }
+.apropos.reveal p:nth-of-type(4) { animation-delay: 0.4s; }
+.apropos.reveal p:nth-of-type(5) { animation-delay: 0.5s; }
+.apropos.reveal p:nth-of-type(6) { animation-delay: 0.6s; }
