@@ -94,6 +94,11 @@
     padding-left: 0;
   }
 
+  .apropos .separator {
+    margin-left: 50px;
+  }
+
+
   .separator {
     margin-left: 0;
   }
@@ -110,6 +115,7 @@
   }
   /* Réseaux sociaux du footer plus grands et espacés */
   .footer-social {
+    display: flex;
     margin-top: 30px;
     margin-bottom: 30px;
     gap: 30px;
