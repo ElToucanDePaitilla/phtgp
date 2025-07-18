@@ -209,7 +209,7 @@
     <section class="section-contact" id="anchor-contact">
       <!-- Sentinelle invisible (déclenche animations si besoin) -->
       <span class="contact-sentinel" aria-hidden="true"></span>
-      <div class="formulaire">
+      <div class="contact-box">
         <div class="text-contact">
           <h2>Me contacter</h2>
           <hr class="separator">
@@ -218,7 +218,7 @@
             87000 Limoges
           </address>
         </div>
-        <form id="contact-form" class="contact-form contact-container">
+        <form id="contact-form" class="contact-form">
           <!-- Champ honeypot anti-spam (invisible pour humains) -->
           <label for="_gotcha" class="visually-hidden" aria-hidden="true">Laisser ce champ vide</label>
           <input type="text" id="_gotcha" name="_gotcha" style="display:none" autocomplete="off" tabindex="-1" aria-hidden="true">
@@ -241,7 +241,7 @@
           <button type="submit" class="submit-btn" >Envoyer</button>
         </form>
       </div>
-      <div class="photo-contact">
+      <div class="contact-photo">
         <img
           src="assets/images/index/contact800.webp"
           srcset="

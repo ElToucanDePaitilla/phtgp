@@ -10,29 +10,29 @@
 }
 
 /* Colonnes */
-.section-contact .formulaire,
-.section-contact .photo-contact {
+.contact-box,
+.contact-photo {
   width: 50%;
 }
 
-/* ───────────── Colonne FORMULAIRE ───────────── */
-.formulaire {
+/* ───────────── CONTACT BOX (h2 + address + formulaire) ───────────── */
+.contact-box {
   display: flex;
   flex-direction: column;
   align-items: flex-start !important;
 }
 
-.contact-container {
-  background-color: #fff;
-  padding: 30px;
-  border-radius: 0;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0);
+/* Champs, labels, bouton */
+.contact-form {
   text-align: center;
+  background-color: #fff;  
   width: 100%;
+  padding: 30px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0);
+  margin-left: 20px;
+  padding-right: 50px; 
 }
 
-/* Champs, labels, bouton */
-.contact-form { margin-left: 20px; padding-right: 50px; }
 .contact-form .form-group { margin-bottom: 20px; text-align: left; }
 .contact-form label {
   margin-bottom: 5px;
@@ -63,14 +63,14 @@
 .contact-form button:active { background:#d3d3d3; }
 
 /* ───────────── Colonne PHOTO ───────────── */
-.section-contact .photo-contact {
+.contact-photo {
   display: flex;
   justify-content: center;
   align-items: center;
   overflow: hidden;
 }
 
-.section-contact .photo-contact img {
+.contact-photo img {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -96,9 +96,7 @@
 .apropos.reveal p:nth-of-type(6) { animation-delay: 0.6s; }
 
 /* Texte contact */
-.text-contact {
-  width: 50%;
-}
+
 .text-contact h2 {
   padding-left: 45px;
   margin: 50px 0 50px 0;
