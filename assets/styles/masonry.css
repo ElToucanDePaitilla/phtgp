@@ -1,7 +1,7 @@
 /* ───────────── Galerie – conteneur principal ───────────── */
 .gallery {
   width: 100%;                      /* pleine largeur */
-  margin: 50px auto 0;              /* 50 px en haut, centré */
+  margin: 50px auto 0 auto;              /* 50 px en haut, centré */
   position: relative;               /* contexte pour éléments absolus */
   min-height: 400px;                /* évite une hauteur trop faible */
   gap: 0;                           /* sans espacement Masonry */
@@ -68,12 +68,6 @@
 
   /* transition : PROPRIÉTÉ  DURÉE  COURBE  DÉLAI */
   transition: opacity 0.3s ease-in;            /* fondu plus rapide (0,3 s) */
-}
-
-/* ───────────── Section contenant la galerie ───────────── */
-.portfolio {
-  overflow: visible;                /* laisse la galerie pousser */
-  padding-bottom: 20px;             /* marge interne bas */
 }
 
 

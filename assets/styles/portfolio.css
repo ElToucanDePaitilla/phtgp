@@ -1,7 +1,5 @@
-/* Section Portfolio */
+/* ───────────── Section contenant la galerie ───────────── */
 .portfolio {
-    background-color:;
-    overflow: hidden;      /* crée un nouveau BFC */
-  /* si besoin, un padding-bottom supplémentaire : */
-    padding-bottom: 0px;
-  }
+  overflow: visible;
+  padding-bottom: 0px;             /* marge interne bas */
+}
