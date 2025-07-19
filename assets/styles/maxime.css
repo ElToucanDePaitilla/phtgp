@@ -8,7 +8,7 @@
     justify-content: center;
     position: relative;
     z-index: 10; /* bien au-dessus de la galerie */
-    margin-top: -5px; /* ou -8px, -12px selon l'effet souhaité */
+    margin-top: -7px; /* ou -8px, -12px selon l'effet souhaité */
     will-change: background-position;
   }
 

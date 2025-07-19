@@ -4,6 +4,7 @@
   flex-direction: row;
   justify-content: center;
   background-color: rgb(255, 255, 255);
+  margin-top: 10px;/*entre hero et apropos*/
 }
 
 /* Portrait de l'auteur */
