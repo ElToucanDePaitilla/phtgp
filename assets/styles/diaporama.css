@@ -2,7 +2,7 @@
 #modal {
   position: fixed;
   inset: 0;
-  background: rgba(0,0,0,.92);
+  background: rgba(0,0,0,1);/*possibilté de mettre un fond légèrement transparent , par exemple 0.92*/
   display: none;
   align-items: center;
   justify-content: center;
@@ -22,7 +22,8 @@
 .close-btn {
   position: absolute;
   top: 10px; right: 10px;
-  font-size: 2rem;
+  font-size: 1.8rem;
+  font-weight: lighter !important;
   color: #fff;
   background: none;
   border: none;
@@ -76,10 +77,24 @@
 .swiper-slide-zoomed img { cursor: move; }
 
 /* Flèches & pagination visibles sur fond sombre */
-.swiper-button-next,
-.swiper-button-prev,
-.swiper-pagination {
-  color: #fff;
+
+.swiper-pagination, .swiper-button-next,
+.swiper-button-prev {
+  color: #fff !important;
   z-index: 1020;
+}
+
+/* Réduire la taille des flèches Swiper */
+.swiper-button-next,
+.swiper-button-prev {
+  font-size: 1.8rem !important; /* Par défaut, c'est assez grand (env. 44px), essayez 1.5rem ou 1.8rem */
+  width: 36px !important;       /* Ajustez selon le résultat souhaité */
+  height: 36px !important;
+  /* Optionnel : réduire aussi la taille de l'icône SVG à l'intérieur */
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+  font-size: 1.4rem !important; /* Pour l’icône flèche Swiper */
 }
 
