@@ -20,7 +20,7 @@ nav {
     align-items: center;
     padding: 20px;
     z-index: 10;
-    font-family: 'Exo 2', sans-serif;
+    font-family: var(--font-title);
     font-size: 12px;
     font-weight: 100;
     background-color: #f6f6f6;
@@ -40,8 +40,8 @@ nav {
   .navbar a.active,
   .navbar a:hover {
     background: rgba(255, 255, 255, 0.8);
-    color: #000;
-    border-color: #000;
+    color: var(--clr-primary);
+    border-color:  var(--clr-primary);
   }
   
   .connect {
@@ -49,20 +49,7 @@ nav {
     color: #226569 !important;
     font-weight: normal !important;
   }
-  
-  .navbar .connexion {
-    display: flex;
-    align-items: center;
-    color: #006b8f;
-    font-weight: normal;
-  }
-  
-  .navbar .connexion img {
-    width: 24px;
-    height: 24px;
-    margin-right: 6px;
-  }
-  
+   
   #user {
     margin-left: 50px;
     height: 30px;

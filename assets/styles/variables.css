@@ -1,0 +1,8 @@
+/* ===== Variables CSS ===== */
+:root {
+    --clr-primary: #000;
+    --clr-secondary: #c8c8c8;
+    --clr-tertiary: #ffffff;
+    --font-title: 'Exo 2', sans-serif;
+    --radius: 8px;
+  }

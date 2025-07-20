@@ -39,7 +39,7 @@
     border: 1px solid #969696;
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
     background-color: #fff;
-    border-radius: 8px;
+    border-radius: var(--radius);
     transition: transform 0.2s, box-shadow 0.2s;
 }
 

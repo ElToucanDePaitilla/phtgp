@@ -4,7 +4,7 @@ let swiperInstance = null;
 let galeries = {};  // variable renommée pour cohérence
 
 // 1. Charger galeries.json au lancement
-fetch('assets/galeries/galeries.json')
+fetch('assets/data/galeries.json')
   .then(res => res.json())
   .then(json => {
     galeries = json;

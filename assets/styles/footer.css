@@ -23,7 +23,7 @@ footer {
   align-items: center;
   color: #cfcfcf;
   text-decoration: none;
-  font-family: 'Exo 2', sans-serif;
+  font-family: var(--font-title);
   font-size: 16px;
   font-weight: bold;
 }
@@ -60,7 +60,7 @@ footer .mentions {
   font-weight: 100;
   text-align: center;
   line-height: 1.2em;
-  color: #c8c8c8;
+  color: var(--clr-secondary);
   margin: 10px 20px;
 }
 
@@ -103,7 +103,7 @@ footer .mentions {
 /* Effet de survol des liens --------------------------------------------------*/
 footer a {
   position: relative;
-  color: #c8c8c8;
+  color: var(--clr-secondary);
   text-decoration: none;
   transition: color 0.3s ease;
 }

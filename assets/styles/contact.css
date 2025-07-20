@@ -87,7 +87,7 @@
 }
 .separator {
   border: none;
-  border-top: 1px solid #000;
+  border-top: 1px solid var(--clr-primary);
   width: 60px;
   margin: 0 0 40px 50px;
 }

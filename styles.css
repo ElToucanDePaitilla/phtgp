@@ -1,5 +1,6 @@
 @import "assets/styles/reset.css";
 @import "assets/styles/base.css";
+@import "assets/styles/variables.css";
 @import "assets/styles/layout.css";
 @import "assets/styles/nav.css";
 @import "assets/styles/hero.css";
@@ -9,7 +10,6 @@
 @import "assets/styles/footer.css";
 @import "assets/styles/maxime.css";
 @import "assets/styles/masonry.css";
-@import "assets/styles/themes-gallerie.css";
 @import "assets/styles/diaporama.css";
 @import "assets/styles/modal.css";
 @import "assets/styles/mentions.css";

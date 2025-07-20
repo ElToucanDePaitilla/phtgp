@@ -37,7 +37,7 @@
 
 /* Sous-titre */
 .hero-content .subtitle {
-  font-family: 'Exo 2', sans-serif;
+  font-family: var(--font-title);
   font-size: 1.2rem;
   letter-spacing: 1.5rem;
   font-weight: bolder;

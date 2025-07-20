@@ -43,21 +43,3 @@ body, html {
     color: #333;
   }
 
-  .separator {
-    border: none;
-    border-top: 1px solid #000;
-    width: 60px;
-    margin: 0 0 40px 50px;
-  }
-
-  .mentions a {
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-    font-optical-sizing: auto;
-    font-size: 1rem;
-    line-height: normal;
-    color: #cfcfcf;
-    font-weight: 100;
-    margin: 0 6px;
-  }
-
-
