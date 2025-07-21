@@ -1,7 +1,9 @@
 @import "assets/styles/reset.css";
 @import "assets/styles/base.css";
 @import "assets/styles/variables.css";
+@import "assets/styles/auth-modal.css";
 @import "assets/styles/layout.css";
+@import "assets/styles/nav.css";
 @import "assets/styles/nav.css";
 @import "assets/styles/hero.css";
 @import "assets/styles/social.css";

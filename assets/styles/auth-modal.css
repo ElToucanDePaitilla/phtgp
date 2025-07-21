@@ -1,0 +1,96 @@
+/* =========  AUTH MODAL – CHARTE MICHEL HAURY  ========= */
+.auth-overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,.75);
+  z-index: 9999;
+  align-items: center;
+  justify-content: center;
+}
+.auth-overlay.active { display: flex; }
+
+.auth-container {
+  position: relative;
+  background: var(--clr-bg-form);
+  border-radius: 12px;
+  width: 90%;
+  max-width: 420px;
+  padding: 100px 30px 45px;
+  font-family: var(--font-title);
+  box-shadow: 0 20px 40px rgba(0,0,0,.25);
+}
+
+.auth-close {
+  position: absolute;
+  top: 12px;
+  right: 18px;
+  font-size: 2.2rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--clr-secondary);
+  line-height: 1;
+}
+
+.auth-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.auth-form input {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid var(--clr-secondary);
+  border-radius: 6px;
+  font-size: 1rem;
+  font-family: var(--font-title);
+  transition: border-color .3s;
+}
+.auth-form input:focus {
+  border-color: var(--clr-secondary);
+  border: 2px solid var(--clr-primary);
+  outline: none;
+}
+
+.auth-form input::placeholder {
+  color: #404040; /* Exemple de violet soutenu */
+  font-weight: bold;
+}
+
+.auth-form button {
+  width: 100%;
+  padding: 14px;
+  font-size: 1rem;
+  font-family: var(--font-title);
+  color: black;
+  font-weight: bold;
+  background: #e4e4e4;
+  border: 1.5px solid #cccccc;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 
+    background 0.2s, 
+    box-shadow 0.2s, 
+    border-color 0.2s, 
+    transform 0.1s;
+  box-shadow: 0 4px 18px rgba(80, 36, 133, 0.12), 0 1.5px 4px rgba(0,0,0,0.10);
+}
+
+.auth-form button:hover {
+  background: #e2e2e2;
+  
+  border-color: #bcbcbc;
+  /* Ombre réduite, effet enfoncé */
+  box-shadow: 0 1.5px 4px rgba(80,36,133,0.12) inset, 0 0.5px 2px rgba(0,0,0,0.10) inset;
+  /* Décalage vers le bas */
+  transform: translateY(0px);
+}
+
+  #auth-modal p {
+  text-align: center;
+  color: black;
+  margin-top: 0px;
+  margin-bottom: 70px;
+}

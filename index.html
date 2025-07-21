@@ -67,6 +67,8 @@
   </head>
   
   <body>
+
+
     <!-- ==================== Barre de navigation principale ==================== -->
     <nav class="navbar">
       <a href="#anchor-home">ACCUEIL</a>
@@ -76,7 +78,7 @@
       <a href="#" class="mention-link" data-modal-target="actus-modal">ACTUS & EXPOS</a>  
       <a href="#anchor-mentions">MENTIONS</a> 
       <img src="assets/images/index/user.png" alt="Icone utilisateur" id="user">
-      <a href="#" class="connect">Connexion</a>
+      <a href="#" class="connect">Espace admin</a>
       <!-- ===== Menu burger (mobile) ===== -->
       <div class="burger">
         <span></span>
@@ -617,12 +619,28 @@
         </div>
       </div> 
     </section>
+<!-- Modale de connexion -->
+<div id="auth-modal" class="auth-overlay">
+
+  <div class="auth-container">
+    <p>Cet espace est en cours de création, nous vous remercions de bien vouloir revenir ultérieurement.</p>
+    <button class="auth-close" aria-label="Fermer">&times;</button>
+    <form id="login-form" class="auth-form">
+      <input type="text" name="login" placeholder="Identifiant ou e-mail" required>
+      <input type="password" name="password" placeholder="Mot de passe temporaire" required>
+      <button type="submit">Entrer</button>
+    </form>
+  </div>
+</div>
 
     <!-- ==================== Scripts JS ==================== -->
     <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
     <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script type="module" src="main.js"></script>
+
+
+
   </body>
 </html>
 
