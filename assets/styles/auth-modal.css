@@ -88,9 +88,19 @@
   transform: translateY(0px);
 }
 
-  #auth-modal p {
+  .auth-container h3 {
+    font-size: 2rem;
+    font-weight:bolder;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+
+  .auth-container p {
+  font-size: 0.8rem;
   text-align: center;
   color: black;
   margin-top: 0px;
   margin-bottom: 70px;
 }
+
+

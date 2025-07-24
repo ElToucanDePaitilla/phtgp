@@ -13,3 +13,4 @@ import './assets/utils/maxime-reveal.js';
 import './assets/utils/parallax.js';
 import './assets/utils/modal-mentions.js';
 import './assets/lib/gallery.js';
+

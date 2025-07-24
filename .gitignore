@@ -1,0 +1,45 @@
+# Node
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+
+# Vite
+dist/
+.vite/
+*.local
+
+# IDE/OS
+.DS_Store
+*.swp
+*.swo
+*.sublime-workspace
+*.sublime-project
+.idea/
+.vscode/
+Thumbs.db
+
+# Build output
+*.log
+coverage/
+build/
+tmp/
+temp/
+
+# Env
+.env
+.env.*
+
+# Système
+*.bak
+*.tmp
+
+# Divers
+public/assets/data/
+public/assets/lib/
+public/assets/tools/
+public/assets/utils/
+dashboard/
+server/
+src/

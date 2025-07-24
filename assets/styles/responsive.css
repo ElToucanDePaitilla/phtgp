@@ -18,6 +18,17 @@
   .maxime {
     background-image: url('../images/index/maxime1024.webp');
   }
+
+  /* Footer en colonne */
+  footer .mentions {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.4rem;
+  }
+
+  .copyright p {
+    margin-top: 50px;
+  }
 }
 
 /* ===========================================================
@@ -61,11 +72,7 @@
     width: 60px;
     height: 60px;
   }
-  /* Footer en colonne */
-  footer .mentions {
-    flex-direction: column;
-    align-items: center;
-  }
+
   /* Section Contact en colonne, formulaire large */
   .section-contact {
     flex-direction: column;
@@ -201,7 +208,8 @@
    < 600px : backgrounds light, typo réduite, modales plein écran
    =========================================================== */
 @media (max-width: 600px) {
-  .maxime {
+
+   .maxime {
     background-image: url('../images/index/maxime500.webp');
   }
   .hero-content h1 {

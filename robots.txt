@@ -1,6 +1,29 @@
 User-agent: *
-Disallow: /assets/
-Disallow: /scripts/
-Disallow: /styles/
+Disallow: /assets/data/
+Disallow: /assets/lib/
+Disallow: /assets/tools/
+Disallow: /assets/utils/
+Disallow: /dashboard/
+Disallow: /server/
+Disallow: /node_modules/
+Disallow: /public/
+Disallow: /src/
+Disallow: /package-lock.json
+Disallow: /package.json
+Disallow: /README.md
+Disallow: /vite.config.js
+Disallow: /.gitignore
+Disallow: /*.js$
+Disallow: /*.css$
+Disallow: /*.map$
+Disallow: /*.ts$
+Disallow: /*.md$
+Disallow: /*.json$
+
+Allow: /assets/images/
+Allow: /assets/styles/
+Allow: /favicon.ico
+Allow: /sitemap.xml
+Allow: /index.html
 
 Sitemap: https://michelhaury.com/sitemap.xml
