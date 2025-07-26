@@ -35,6 +35,11 @@
    < 920px : Layout mobile/tablette, menu burger, colonne, etc.
    =========================================================== */
 @media (max-width: 920px) {
+
+  .nav-mentions-dropdown {
+    display: none !important;
+  }
+
   /* NavBar : masque les liens principaux, affiche le burger */
   .navbar > a,
   .navbar > img,

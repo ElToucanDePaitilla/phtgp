@@ -76,7 +76,19 @@
       <a href="#anchor-portfolio">PORTFOLIO</a>
       <a href="#anchor-contact">CONTACT</a>
       <a href="#" class="mention-link" data-modal-target="actus-modal">ACTUS & EXPOS</a>  
-      <a href="#anchor-mentions">MENTIONS</a> 
+      <!--<a href="#anchor-mentions">MENTIONS</a>-->
+      
+      <!-- Sous-menu Mentions -->
+      <div class="nav-mentions-dropdown">
+        <a href="#" class="nav-mentions-btn">MENTIONS ▾</a>
+        <div class="nav-mentions-content">
+          <a href="#" class="mention-link" data-modal-target="legal-modal">Mentions légales</a>
+          <a href="#" class="mention-link" data-modal-target="cookies-modal">Cookies</a>
+          <a href="#" class="mention-link" data-modal-target="privacy-modal">Confidentialité</a>
+          <a href="#" class="mention-link" data-modal-target="terms-modal">Utilisation</a>
+        </div>
+      </div>
+
       <img src="assets/images/index/user.png" alt="Icone utilisateur" id="user">
       <a href="#" class="connect">Espace admin</a>
       <!-- ===== Menu burger (mobile) ===== -->
@@ -113,13 +125,13 @@
     <!-- ==================== Section À propos ==================== -->
     <div class="anchor"></div>
     <section class="section-apropos">
-      <div class="portrait">
+      <div class="portrait"><!--500-900-1024-->
         <img
-          src="assets/images/index/portrait800.webp"
+          src="assets/images/index/portraitMH01.webp" 
           srcset="
             assets/images/index/portrait500.webp 500w,
             assets/images/index/portrait800.webp 800w,
-            assets/images/index/portrait1024.webp 1024w
+            assets/images/index/portraitMH01.webp 1024w
           "
           sizes="100vw"
           alt="Portrait de Michel Haury"
